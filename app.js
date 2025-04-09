@@ -39,7 +39,7 @@ app.use("/test", testRouter);
 app.use("/1_main", mainRouter);
 app.use("/2_auction", auctionRouter);
 app.use("/3_map", mapRouter);
-app.use("/4_edu-data", eduDataRouter);
+app.use("/4_edu_data", eduDataRouter);
 app.use("/5_statistics", statisticsRouter);
 app.use("/6_favorites", favoritesRouter);
 app.use("/7_mypage", mypageRouter);

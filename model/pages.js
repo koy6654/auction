@@ -28,7 +28,7 @@ export const map = [
 export const edu_data = [
   {
     route: "4_edu_data",
-    path: "4_1_couse-info",
+    path: "4_1_course-info",
     title: "교육/자료실 - 수강안내",
   },
   {
