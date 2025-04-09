@@ -51,7 +51,7 @@ export const edu_data = [
 export const statistics = [
   {
     route: "5_statistics",
-    path: "5_1_today-acutions",
+    path: "5_1_today-auctions",
     title: "통계 - 오늘진행건수",
   },
   {
