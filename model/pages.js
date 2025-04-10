@@ -1,3 +1,7 @@
+export const template = [
+  { route: "0_template", path: "0_1_template", title: "템플릿" },
+];
+
 export const main = [
   { route: "1_main", path: "1_1_main-menu", title: "메인 메뉴" },
   { route: "1_main", path: "1_2_signup-signin", title: "로그인/회원가입" },
@@ -107,6 +111,7 @@ export const details = [
 ];
 
 export const pages = [
+  ...template,
   ...main,
   ...auction,
   ...map,
