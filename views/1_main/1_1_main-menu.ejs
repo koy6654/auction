@@ -1,57 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <title><%= title %></title>
   </head>
   <body>
-    <% include ../layout/header-normal.ejs %>
-    <% include ../layout/header-min.ejs %>
+    <% include ../layout/header-normal.ejs %> <% include
+    ../layout/header-min.ejs %>
     <main>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
-      <p><%= title %></p>
-      <p><%= path %></p>
+      <% for (let i = 0; i < 40; i++) { %>
+      <p><%= title %> - <%= i + 1 %></p>
+      <p><%= path %> - <%= i + 1 %></p>
+      <% } %>
     </main>
-    <% include ../layout/lnb.ejs %>
-    <% include ../layout/footer.ejs %>
-    <script src="/script/header.js">
-
-    </script>
+    <% include ../layout/lnb.ejs %> <% include ../layout/footer.ejs %>
+    <script src="/javascripts/header.js"></script>
   </body>
 </html>
