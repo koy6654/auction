@@ -1,0 +1,13 @@
+<nav class="nav-left-side">
+    <p>lnb</p>
+    <button type="button">top</button>
+    <button id="theme-toggle" type="button">theme</button>
+</nav>
+
+<script>
+const toggleButton = document.getElementById('theme-toggle');
+toggleButton.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark-theme');
+});
+
+</script>
