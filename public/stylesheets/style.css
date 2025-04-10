@@ -8,19 +8,49 @@
   --bg-color-01: #ffffff;
   --bg-color-02: #f6f7f9;
   --border-color-01: #dee0e5;
+  --border-color-02: #d5d5d5;
+  --border-color-03: #eaeaea;
   --text-color: #000000;
+  --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 }
 
 .dark-theme {
   --bg-color-01: #17171c;
   --bg-color-02: #101013;
   --border-color-01: #51515f;
+  --border-color-02: #4b4b4b;
+  --border-color-03: #313131;
   --text-color: #f5f5f5;
+  --scrollbar-thumb-color: #ccc;
+}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 너비 */
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* 트랙 배경 */
+}
+
+/* 화살표 제거 (크롬에선 보통 자동 제거됨) */
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
 }
 
 body {
   padding: 0;
   margin: 0;
+  min-width: 1150px;
+  overflow-x: auto;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: var(--bg-color-01);
   color: var(--text-color);
@@ -48,6 +78,9 @@ nav.nav-left-side {
 }
 
 header.header-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,11 +91,16 @@ header.header-normal {
   background-color: var(--bg-color-01);
 }
 
-header.header-normal .container {
+header.header-normal .container,
+header.header-min .container {
+  width: 1084px;
+  border: 1px solid red;
 }
 
 header.header-min {
   display: none;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -74,14 +112,32 @@ header.header-min {
 }
 
 main {
-  width: 100%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+  padding-right: 66px;
   min-height: 880px;
   background-color: var(--bg-color-01);
 }
 
 footer {
   display: flex;
+  justify-content: center;
+  align-items: top;
   height: 337px;
-  border-top: 1px solid var(--border-color-01);
+  border-top: 1px solid var(--border-color-02);
   background-color: var(--bg-color-01);
+}
+
+footer .container {
+  width: 1084px;
+  border: 1px solid red;
+}
+
+footer .company-info {
+  border-top: 1px solid var(--border-color-03);
 }
