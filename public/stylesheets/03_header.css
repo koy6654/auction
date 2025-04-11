@@ -31,6 +31,8 @@ header.header-min {
 header.header-normal .container,
 header.header-min .container {
   width: 1084px;
+  min-width: 1084px;
+  max-width: 1084px;
   border: 1px solid red;
   color: var(--text-color-01);
 }
