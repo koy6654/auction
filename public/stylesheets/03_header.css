@@ -1,11 +1,12 @@
 header.header-normal {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   position: fixed;
   top: 0;
   left: 0;
   padding-right: 66px;
+  padding-top: 7px;
   width: 100%;
   height: 104px;
   border-bottom: 1px solid var(--border-color-01);
@@ -15,11 +16,12 @@ header.header-normal {
 header.header-min {
   display: none;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   position: fixed;
   top: 0;
   left: 0;
   padding-right: 66px;
+  padding-top: 7px;
   width: 100%;
   height: 58px;
   border-bottom: 1px solid var(--border-color-01);
@@ -53,6 +55,10 @@ header.header-min .container .info-area .right-menu {
 
 header.header-normal .container .info-area .left-menu .logo,
 header.header-min .container .info-area .left-menu .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
   color: var(--text-color-01);
   text-align: center;
   font-size: 18.89px;
@@ -61,9 +67,38 @@ header.header-min .container .info-area .left-menu .logo {
   line-height: var(--line-height-20_3, 20.3px); /* 107.464% */
 }
 
-header.header-normal .container .info-area .left-menu .multi-search,
-header.header-min .container .info-area .left-menu .multi-search {
+header.header-normal .container .info-area .left-menu .multi-search {
   display: flex;
+  width: 485px;
+  height: 42px;
+  padding: 8.13px 16px 8.12px 19px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  margin-left: 26px;
+  border-radius: 38px;
+  border: 1px solid #0091da;
+  background-color: var(--bg-color-01);
+}
+
+header.header-normal
+  .container
+  .info-area
+  .left-menu
+  .multi-search
+  .vertical-line {
+  width: 1px;
+  height: 14px;
+  border-left: 1px solid #cdcdcd;
+}
+
+header.header-normal .container .info-area .left-menu .multi-search input {
+  border: none;
+  outline: none;
+  color: var(--text-color-03);
+  font-size: 14px;
+  font-style: normal;
+  background-color: transparent;
 }
 
 header.header-normal .container .info-area .right-menu .site-direction dl,

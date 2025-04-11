@@ -6,6 +6,7 @@
   --border-color-03: #eaeaea;
   --text-color-01: #000;
   --text-color-02: #595959;
+  --text-color-03: #595959;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -17,6 +18,7 @@
   --border-color-03: #313131;
   --text-color-01: #fff;
   --text-color-02: #bbb;
+  --text-color-02: #7e7e7e;
   --scrollbar-thumb-color: #ccc;
 }
 
