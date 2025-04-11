@@ -9,7 +9,6 @@ header.header-normal {
   padding-top: 7px;
   width: 100%;
   min-width: 1150px;
-  height: 104px;
   border-bottom: 1px solid var(--border-color-01);
   background-color: var(--bg-color-01);
   overflow: hidden;
@@ -29,10 +28,9 @@ header.header-min {
   top: 0;
   left: 0;
   padding-right: 66px;
-  padding-top: 7px;
   width: 100%;
+  height: 52px;
   min-width: 1150px;
-  height: 58px;
   border-bottom: 1px solid var(--border-color-01);
   background-color: var(--bg-color-01);
 }
@@ -47,26 +45,31 @@ header.header-min .container {
   margin: 0 auto;
 }
 
+header.header-normal .container {
+  height: 104px;
+}
+
+header.header-min .container {
+  height: 52px;
+}
+
 /* info-area */
-header.header-normal .container .info-area,
-header.header-min .container .info-area {
+header.header-normal .container .info-area {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
-header.header-normal .container .info-area .left-menu,
-header.header-min .container .info-area .left-menu {
+header.header-normal .container .info-area .left-menu {
   display: flex;
 }
 
-header.header-normal .container .info-area .right-menu,
-header.header-min .container .info-area .right-menu {
+header.header-normal .container .info-area .right-menu {
   display: flex;
 }
 
-header.header-normal .container .info-area .left-menu .logo,
-header.header-min .container .info-area .left-menu .logo {
+header.header-normal .container .info-area .left-menu .logo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -84,13 +87,24 @@ header.header-normal .container .info-area .left-menu .multi-search {
   width: 485px;
   height: 42px;
   padding: 8.13px 16px 8.12px 19px;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
   flex-shrink: 0;
   margin-left: 26px;
   border-radius: 38px;
   border: 1px solid #0091da;
   background-color: var(--bg-color-01);
+}
+
+header.header-normal .container .info-area .left-menu .multi-search .left-side,
+header.header-normal
+  .container
+  .info-area
+  .left-menu
+  .multi-search
+  .right-side {
+  display: flex;
+  gap: 8px;
 }
 
 header.header-normal
@@ -113,22 +127,65 @@ header.header-normal .container .info-area .left-menu .multi-search input {
   background-color: transparent;
 }
 
-header.header-normal .container .info-area .right-menu .site-direction dl,
-header.header-min .container .info-area .right-menu .site-direction dl {
+header.header-normal .container .info-area .right-menu .site-direction dl {
   display: flex;
+  margin-right: 5px;
+}
+
+header.header-normal .container .info-area .right-menu .site-direction dd {
+  padding: 0 10px;
+}
+
+header.header-normal .container .info-area .right-menu .site-direction dd + dd {
+  border-left: 1px solid #ccc;
+}
+
+header.header-normal .container .info-area .right-menu .site-direction dl dd {
+  color: var(--text-color-04);
+}
+
+header.header-normal
+  .container
+  .info-area
+  .right-menu
+  .site-direction
+  dl
+  dd.importance {
+  color: var(--text-color-05);
+  font-weight: 600;
 }
 
 /* menu-area */
 header.header-normal .container .menu-area,
 header.header-min .container .menu-area {
   display: flex;
+  padding: 10px;
   justify-content: space-between;
   align-items: center;
+}
+
+header.header-min .container .menu-area {
+  height: 52px;
 }
 
 header.header-normal .container .menu-area .left-menu ul,
 header.header-min .container .menu-area .left-menu ul {
   display: flex;
+  gap: 58px;
+}
+
+header.header-normal .container .menu-area .left-menu ul li,
+header.header-min .container .menu-area .left-menu ul li {
+  color: var(--text-color-06);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20.3px;
+}
+
+header.header-normal .container .menu-area .left-menu ul li.active,
+header.header-min .container .menu-area .left-menu ul li.active {
+  color: var(--text-color-07);
 }
 
 header.header-normal .container .menu-area .right-menu dl,

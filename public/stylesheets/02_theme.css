@@ -7,6 +7,10 @@
   --text-color-01: #000;
   --text-color-02: #595959;
   --text-color-03: #595959;
+  --text-color-04: #070606;
+  --text-color-05: #000;
+  --text-color-06: #595959;
+  --text-color-07: #0062a8;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -18,7 +22,11 @@
   --border-color-03: #313131;
   --text-color-01: #fff;
   --text-color-02: #bbb;
-  --text-color-02: #7e7e7e;
+  --text-color-03: #7e7e7e;
+  --text-color-04: #c5c5c5;
+  --text-color-05: #c5c5c5;
+  --text-color-06: #c5c5c5;
+  --text-color-07: #fff;
   --scrollbar-thumb-color: #ccc;
 }
 
