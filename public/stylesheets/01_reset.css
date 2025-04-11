@@ -23,6 +23,7 @@ body {
   padding: 0;
   margin: 0;
   min-width: 1150px;
+  max-width: 1150px;
   overflow-x: auto;
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
     Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", sans-serif;

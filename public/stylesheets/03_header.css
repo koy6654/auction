@@ -2,7 +2,7 @@ header.header-normal {
   display: flex;
   justify-content: center;
   align-items: start;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   padding-right: 66px;
@@ -13,11 +13,17 @@ header.header-normal {
   background-color: var(--bg-color-01);
 }
 
+@media (max-width: 1149px) {
+  header.header-normal {
+    justify-content: flex-start;
+  }
+}
+
 header.header-min {
   display: none;
   justify-content: center;
   align-items: start;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   padding-right: 66px;
