@@ -1,0 +1,97 @@
+header.header-normal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-right: 66px;
+  width: 100%;
+  height: 104px;
+  border-bottom: 1px solid var(--border-color-01);
+  background-color: var(--bg-color-01);
+}
+
+header.header-min {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-right: 66px;
+  width: 100%;
+  height: 58px;
+  border-bottom: 1px solid var(--border-color-01);
+  background-color: var(--bg-color-01);
+}
+
+header.header-normal .container,
+header.header-min .container {
+  width: 1084px;
+  border: 1px solid red;
+  color: var(--text-color-01);
+}
+
+/* info-area */
+header.header-normal .container .info-area,
+header.header-min .container .info-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.header-normal .container .info-area .left-menu,
+header.header-min .container .info-area .left-menu {
+  display: flex;
+}
+
+header.header-normal .container .info-area .right-menu,
+header.header-min .container .info-area .right-menu {
+  display: flex;
+}
+
+header.header-normal .container .info-area .left-menu .logo,
+header.header-min .container .info-area .left-menu .logo {
+  color: var(--text-color-01);
+  text-align: center;
+  font-size: 18.89px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: var(--line-height-20_3, 20.3px); /* 107.464% */
+}
+
+header.header-normal .container .info-area .left-menu .multi-search,
+header.header-min .container .info-area .left-menu .multi-search {
+  display: flex;
+}
+
+header.header-normal .container .info-area .right-menu .site-direction dl,
+header.header-min .container .info-area .right-menu .site-direction dl {
+  display: flex;
+}
+
+/* menu-area */
+header.header-normal .container .menu-area,
+header.header-min .container .menu-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.header-normal .container .menu-area .left-menu ul,
+header.header-min .container .menu-area .left-menu ul {
+  display: flex;
+}
+
+header.header-normal .container .menu-area .right-menu dl,
+header.header-min .container .menu-area .right-menu dl {
+  display: flex;
+}
+
+header.header-min .container .menu-area .right-menu {
+  display: flex;
+}
+header.header-min .container .menu-area .right-menu .multi-search {
+  display: flex;
+}

@@ -1,0 +1,17 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 337px;
+  border-top: 1px solid var(--border-color-02);
+  background-color: var(--bg-color-01);
+}
+
+footer .container {
+  width: 1084px;
+  border: 1px solid red;
+}
+
+footer .company-info {
+  border-top: 1px solid var(--border-color-03);
+}
