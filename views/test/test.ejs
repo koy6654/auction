@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/06_component.css" />
+
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div style="background-color: #E5E5E5; padding: 50px">
+      <div>
+        <%- include('../components/button', { 
+          width: '125px',
+          height: '30px',
+          theme: 'white',
+          label: '버튼',
+          fontSize: '16px',
+        }) %>
+      </div>
+      <div>
+        <%- include('../components/button', { 
+          width: '125px',
+          height: '30px',
+          theme: 'skyBlue',
+          label: '버튼',
+          fontSize: '16px',
+        }) %>
+        <%- include('../components/button', { 
+          width: '125px',
+          height: '30px',
+          theme: 'yellow',
+          label: '버튼',
+          fontSize: '16px',
+        }) %>
+        <%- include('../components/button', { 
+          width: '125px',
+          height: '30px',
+          theme: 'silver',
+          label: '버튼',
+          fontSize: '16px',
+        }) %>
+      </div>
+      <div>
+        <%- include('../components/button', { 
+          width: '125px',
+          height: '30px',
+          theme: 'navyBlue',
+          label: '버튼',
+          fontSize: '16px',
+        }) %>
+        <%- include('../components/button', { 
+          width: '125px',
+          height: '30px',
+          theme: 'red',
+          label: '버튼',
+          fontSize: '16px',
+        }) %>
+        <%- include('../components/button', { 
+          width: '125px',
+          height: '30px',
+          theme: 'silverDarkMode',
+          label: '버튼',
+          fontSize: '16px',
+        }) %>
+        <%- include('../components/button', { 
+          width: '125px',
+          height: '30px',
+          theme: 'transparent',
+          label: '버튼',
+          fontSize: '16px',
+        }) %>
+      </div>
+    </div>
+  </body>
+</html>

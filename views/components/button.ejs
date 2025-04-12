@@ -1,0 +1,66 @@
+<%
+  const buttonWidth = width;
+  const buttonHeight = height;
+  const buttonTheme = theme; // white, skyBlue, navyBlue, yellow, red, silver, silverDarkMode, transparent
+  const buttonLabel = label;
+  const buttonFontSize = fontSize;
+
+  let backgroundColor = '#FFFFFF';
+  let textColor = '#030303';
+  let borderOutline = '';
+  let borderOutlineOffset = '';
+
+  if (buttonTheme === 'white') {
+    backgroundColor = '#FFFFFF';
+    textColor = '#030303';
+  } else if (buttonTheme === 'skyBlue') {
+    backgroundColor = '#458DD6';
+    textColor = '#FFFFFF';
+  } else if (buttonTheme === 'navyBlue') {
+    backgroundColor = '#2D5F9D';
+    textColor = '#FFFFFF';
+  } else if (buttonTheme === 'yellow') {
+    backgroundColor = '#F5C939';
+    textColor = '#060500';
+  } else if (buttonTheme === 'red') {
+    backgroundColor = '#F53B32';
+    textColor = '#FFFFFF';
+  } else if (buttonTheme === 'silver') {
+    backgroundColor = '#E6E8EA';
+    textColor = '#59616F';
+  } else if (buttonTheme === 'silverDarkMode') {
+    backgroundColor = '';
+    textColor = '#FFFFFF';
+    borderOutline = '1px solid white';
+    borderOutlineOffset = '-1px';
+  } else if (buttonTheme === 'transparent') {
+    backgroundColor = '';
+    textColor = '#6A707B';
+  } else {
+    // 기본값
+    backgroundColor = 'white';
+    textColor = '#030303';
+  }
+
+%>
+
+<div
+  class="component-button"
+  style="
+    --width: <%= buttonWidth %>;
+    --height: <%= buttonHeight %>;
+    --background: <%= backgroundColor %>;
+    --outline: <%= borderOutline %>;
+    --outline-offset: <%= borderOutlineOffset %>;
+  "
+>
+  <div
+    class="component-button-label"
+    style="
+      --color: <%= textColor %>;
+      --font-size: <%= buttonFontSize %>;
+    "
+  >
+    <%= buttonLabel %>
+  </div>
+</div>

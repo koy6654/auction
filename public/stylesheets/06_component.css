@@ -1,0 +1,22 @@
+.component-button {
+  padding: 10px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  width: var(--width);
+  height: var(--height);
+  background: var(--background);
+  outline: var(--outline);
+  outline-offset: var(--outline-offset);
+}
+
+.component-button-label {
+  text-align: center;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 16px;
+  word-wrap: break-word;
+  color: var(--color);
+  font-size: var(--font-size);
+}
