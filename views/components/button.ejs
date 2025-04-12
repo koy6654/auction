@@ -1,7 +1,7 @@
 <%
   const buttonWidth = width;
   const buttonHeight = height;
-  const buttonTheme = theme; // white, skyBlue, navyBlue, yellow, red, silver, silverDarkMode, transparent
+  const buttonTheme = theme; // white, skyBlue, navyBlue, yellow, red, silver, silverDarkMode, transparent, bluePrint
   const buttonLabel = label;
   const buttonFontSize = fontSize;
 
@@ -31,7 +31,7 @@
   } else if (buttonTheme === 'silverDarkMode') {
     backgroundColor = '';
     textColor = '#FFFFFF';
-    borderOutline = '1px solid white';
+    borderOutline = '1px solid #FFFFFF';
     borderOutlineOffset = '-1px';
   } else if (buttonTheme === 'transparent') {
     backgroundColor = '';
