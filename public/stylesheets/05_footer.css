@@ -17,3 +17,13 @@ footer .container {
 footer .company-info {
   border-top: 1px solid var(--border-color-03);
 }
+
+footer .company-info .logo {
+  display: block;
+  width: 130px;
+  height: 21px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: var(--icon-logo);
+}

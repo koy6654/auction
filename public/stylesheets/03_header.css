@@ -88,6 +88,16 @@ header.header-normal .container .info-area .left-menu .logo a {
   line-height: var(--line-height-20_3, 20.3px); /* 107.464% */
 }
 
+header.header-normal .container .info-area .left-menu .logo .icon-logo {
+  display: block;
+  width: 130px;
+  height: 21px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: var(--icon-logo);
+}
+
 header.header-normal .container .info-area .left-menu .multi-search {
   display: flex;
   width: 485px;
