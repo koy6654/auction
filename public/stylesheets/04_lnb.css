@@ -26,6 +26,7 @@ nav.nav-right-side .container .icon {
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 nav.nav-right-side .container .top-side,
