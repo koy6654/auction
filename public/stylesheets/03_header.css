@@ -13,12 +13,12 @@ header.header-normal {
   background-color: var(--bg-color-01);
   overflow: hidden;
 }
-
+/* 
 @media (max-width: 1149px) {
   header.header-normal {
     justify-content: flex-start;
   }
-}
+} */
 
 header.header-min {
   display: none;
