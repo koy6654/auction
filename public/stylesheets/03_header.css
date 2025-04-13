@@ -71,6 +71,12 @@ header.header-normal .container .info-area .right-menu {
 
 header.header-normal .container .info-area .left-menu .logo {
   display: flex;
+}
+
+header.header-normal .container .info-area .left-menu .logo a {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 4px;
@@ -191,6 +197,16 @@ header.header-min .container .menu-area .left-menu ul li.active {
 header.header-normal .container .menu-area .right-menu dl,
 header.header-min .container .menu-area .right-menu dl {
   display: flex;
+  gap: 19px;
+}
+
+header.header-normal .container .menu-area .right-menu dl dd,
+header.header-min .container .menu-area .right-menu dl dd {
+  color: var(--text-color-08);
+  font-weight: 700;
+  line-height: 20.3px; /* 145% */
+  font-size: 14px;
+  font-style: normal;
 }
 
 header.header-min .container .menu-area .right-menu {
