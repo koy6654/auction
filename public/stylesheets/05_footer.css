@@ -1,24 +1,77 @@
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: top;
   height: 337px;
-  border-top: 1px solid var(--border-color-02);
   background-color: var(--bg-color-01);
 }
 
+footer .notice,
+footer .company-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+footer .notice {
+  border-top: 1px solid var(--border-color-02);
+  border-bottom: 1px solid var(--border-color-03);
+}
+
 footer .container {
+  display: flex;
   width: 1084px;
   min-width: 1084px;
   max-width: 1084px;
   border: 1px solid transparent;
 }
 
-footer .company-info {
-  border-top: 1px solid var(--border-color-03);
+footer .notice .container {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 34px;
+  padding: 18px 20px;
 }
 
-footer .company-info .logo {
+footer .notice .container .title {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--text-color-13);
+}
+
+footer .notice .container .event {
+  color: var(--text-color-14);
+  font-style: normal;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+footer .notice .container .event:hover {
+  color: var(--hover-color-01);
+}
+
+footer .notice .container .more-info {
+  color: var(--text-color-14);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+footer .company-info .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 21px 9px 42px;
+}
+
+footer .company-info .container .logo {
   display: block;
   width: 130px;
   height: 21px;
@@ -26,4 +79,54 @@ footer .company-info .logo {
   background-repeat: no-repeat;
   background-position: center;
   background-image: var(--icon-logo);
+  padding: 19px 22px;
+}
+
+footer .company-info .container .terms {
+  display: flex;
+  color: var(--text-color-15);
+  font-size: 13.5px;
+  font-style: normal;
+  font-weight: 600;
+  gap: 26px;
+}
+
+footer .company-info .container .terms li {
+  position: relative;
+}
+
+footer .company-info .container .terms li + li::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px; /* 원하는 높이 조절 */
+  background-color: var(--border-color-05); /* 원하는 색상 */
+}
+
+footer .company-info .container .address,
+footer .company-info .container .customer {
+  display: flex;
+  gap: 13px;
+  color: var(--text-color-15);
+  font-style: normal;
+  font-weight: 400;
+}
+
+footer .company-info .container .customer .tel,
+footer .company-info .container .customer .tel a {
+  font-weight: 600;
+  color: var(--text-color-01);
+  text-decoration: none;
+}
+
+footer .company-info .container .customer .tel a:hover {
+  color: var(--text-color-16);
+}
+
+footer .company-info .container .direction {
+  font-weight: 400;
+  color: var(--text-color-16);
 }

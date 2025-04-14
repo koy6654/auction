@@ -10,8 +10,15 @@ a {
   color: #00b7ff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
 ul,
+menu,
 li,
 dl,
 dd {
@@ -19,7 +26,8 @@ dd {
   padding: 0;
 }
 
-ul li {
+ul li,
+menu li {
   list-style: none;
 }
 

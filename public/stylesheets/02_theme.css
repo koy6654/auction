@@ -6,6 +6,7 @@
   --border-color-02: #d5d5d5;
   --border-color-03: #eaeaea;
   --border-color-04: transparent;
+  --border-color-05: #e5e8eb;
   --text-color-01: #000;
   --text-color-02: #595959;
   --text-color-03: #595959;
@@ -18,12 +19,17 @@
   --text-color-10: #636363;
   --text-color-11: #555;
   --text-color-12: #1a1a1a;
+  --text-color-13: #0e0e0e;
+  --text-color-14: #37404c;
+  --text-color-15: #595959;
+  --text-color-16: #0091da;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-light.svg");
   --icon-recent: url("/images/icon-lnb-recent-light.svg");
   --icon-top: url("/images/icon-lnb-top-arrow-light.svg");
   --icon-theme: url("/images/icon-lnb-theme-light.svg");
   --icon-logo: url("/images/logo-light.png");
+  --hover-color-01: #0091da;
 }
 
 .dark-theme {
@@ -34,6 +40,7 @@
   --border-color-02: #4b4b4b;
   --border-color-03: #313131;
   --border-color-04: #fff;
+  --border-color-05: #8b97ae;
   --text-color-01: #fff;
   --text-color-02: #bbb;
   --text-color-03: #7e7e7e;
@@ -46,12 +53,17 @@
   --text-color-10: #c3c3c3;
   --text-color-11: #e7e7e9;
   --text-color-12: #bebebe;
+  --text-color-13: #fff;
+  --text-color-14: #cdcdcd;
+  --text-color-15: #d8d8d8;
+  --text-color-16: #a5ce4f;
   --scrollbar-thumb-color: rgba(4, 2, 2, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-dark.svg");
   --icon-recent: url("/images/icon-lnb-recent-dark.svg");
   --icon-top: url("/images/icon-lnb-top-arrow-dark.svg");
   --icon-theme: url("/images/icon-lnb-theme-dark.svg");
   --icon-logo: url("/images/logo-dark.png");
+  --hover-color-01: #0091da;
 }
 
 /* Chrome, Edge, Safari */
