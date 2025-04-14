@@ -304,6 +304,7 @@ header.header-normal
 
 /* menu-area */
 header.header-normal .container .menu-area{
+  position: relative;
   display: flex;
   padding: 10px;
   justify-content: space-between;
@@ -422,6 +423,7 @@ header.header-min .container {
 }
 
 header.header-min .container .menu-area {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -460,5 +462,90 @@ header.header-min .container .menu-area .right-menu {
 
 header.header-min .container .menu-area .right-menu .multi-search,
 header.header-min .container .menu-area .right-menu .avatar {
+  display: flex;
+}
+
+.main-menu-popup{
+  display: none;
+  position: absolute;
+  z-index: var(--z-index-main-menu-popup);
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1109px;
+  padding: 10px 1px 0px 1px;
+  gap: 17px;
+  border-radius: 13px;
+  border: 1px solid #616161;
+  background: #FFF;
+  top: 100%;
+  left: -18px;
+}
+
+.main-menu-popup .top-side{
+  display: flex;
+  padding: 4px 12px;
+  align-items: flex-start;
+  /* gap: 10px; */
+  align-self: stretch;
+}
+
+.main-menu-popup .top-side ul{
+  /* width: 104px; */
+}
+
+.main-menu-popup .top-side ul li{
+  padding: 8px 12px;
+}
+
+.main-menu-popup .top-side ul.public-auction{
+  margin-left:15px;
+}
+
+.main-menu-popup .top-side ul.map{}
+
+.main-menu-popup .top-side ul.edu-data{
+  margin-left: 138px;
+}
+
+.main-menu-popup .top-side ul.statistics{
+  margin-left: 53px;
+}
+
+.main-menu-popup .top-side ul.favorite{
+  margin-left: 11px;
+}
+
+.main-menu-popup .top-side ul.mypage{
+  margin-left: 56px;
+}
+
+
+.main-menu-popup .top-side li{
+  color: #000;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.14px;
+}
+
+.main-menu-popup .bottom-side{
+  padding: 23px 10px;
+  gap: 10px;
+  align-self: stretch;
+  border-top: 1px solid #C7C7C7;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  background: #F5F5F5;
+}
+
+.main-menu-popup .bottom-side .support {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main-menu-popup .bottom-side .support ul{
   display: flex;
 }

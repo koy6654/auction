@@ -1,7 +1,8 @@
 :root{
   --z-index-header: 1;
   --z-index-lnb: 2;
-  --z-index-list-dropdown-popup: 3;
+  --z-index-main-menu-popup:3;
+  --z-index-list-dropdown-popup: 4;
 }
 
 :root {

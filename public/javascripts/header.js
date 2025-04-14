@@ -36,4 +36,37 @@ document.addEventListener("DOMContentLoaded", function () {
   setupPopup("categoryToggleBtn", "categoryPopup");
   setupPopup("min-categoryToggleBtn", "min-categoryPopup");
   setupPopup("applyForTrialToggleBtn", "applyForTrialPopup");
+
+  const menuItems = document.querySelectorAll(".menu-area-item");
+  const mainMenuPopup = document.querySelector(".main-menu-popup");
+  const menuArea = document.querySelector(".menu-area");
+  let timeout;
+
+  menuItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      clearTimeout(timeout);
+      mainMenuPopup.style.display = "flex";
+    });
+  });
+
+  menuArea.addEventListener("mouseleave", () => {
+    timeout = setTimeout(() => {
+      mainMenuPopup.style.display = "none";
+    }, 100);
+  });
+
+  mainMenuPopup.addEventListener("mouseenter", () => {
+    clearTimeout(timeout);
+  });
+
+  mainMenuPopup.addEventListener("mouseleave", () => {
+    mainMenuPopup.style.display = "none";
+  });
+
+  const closeButton = mainMenuPopup.querySelector(".support button");
+  if (closeButton) {
+    closeButton.addEventListener("click", () => {
+      mainMenuPopup.style.display = "none";
+    });
+  }
 });
