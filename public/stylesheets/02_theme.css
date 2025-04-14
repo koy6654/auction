@@ -17,6 +17,7 @@
   --text-color-09: #59616f;
   --text-color-10: #636363;
   --text-color-11: #555;
+  --text-color-12: #1a1a1a;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-light.svg");
   --icon-recent: url("/images/icon-lnb-recent-light.svg");
@@ -44,7 +45,8 @@
   --text-color-09: #fff;
   --text-color-10: #c3c3c3;
   --text-color-11: #e7e7e9;
-  --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
+  --text-color-12: #bebebe;
+  --scrollbar-thumb-color: rgba(4, 2, 2, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-dark.svg");
   --icon-recent: url("/images/icon-lnb-recent-dark.svg");
   --icon-top: url("/images/icon-lnb-top-arrow-dark.svg");

@@ -11,7 +11,7 @@ footer .container {
   width: 1084px;
   min-width: 1084px;
   max-width: 1084px;
-  border: 1px solid red;
+  border: 1px solid transparent;
 }
 
 footer .company-info {
