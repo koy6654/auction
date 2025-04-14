@@ -89,6 +89,7 @@ footer .company-info .container .terms {
   font-style: normal;
   font-weight: 600;
   gap: 26px;
+  z-index: -1;
 }
 
 footer .company-info .container .terms li {

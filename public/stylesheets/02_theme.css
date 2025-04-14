@@ -1,8 +1,11 @@
 :root{
   --z-index-header: 1;
-  --z-index-lnb: 2;
-  --z-index-main-menu-popup:3;
-  --z-index-list-dropdown-popup: 4;
+  --z-index-main-menu-popup: 2;
+  --z-index-list-dropdown-popup: 3;
+  --z-index-backdrop: 4;
+  --z-index-main-search-popup: 5;
+  --z-index-main-search: 6;
+  --z-index-lnb: 7;
 }
 
 :root {
