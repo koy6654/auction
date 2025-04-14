@@ -11,6 +11,7 @@ nav.nav-right-side {
   right: 0;
   border-left: 1px solid var(--border-color-01);
   background-color: var(--bg-color-02);
+  z-index: var(--z-index-lnb);
 }
 
 nav.nav-right-side .container {
@@ -103,7 +104,7 @@ nav.nav-right-side .container .recent .icon {
 nav.nav-right-side .container .top .icon {
   width: 18px;
   height: 18px;
-  background-image: var(--icon-top);
+  background-image: var(--icon-arrow);
 }
 
 nav.nav-right-side .container .top p {

@@ -5,21 +5,26 @@
       <div class="left-menu">
         <div class="logo">
           <a href="/">
-            <!-- <img src="/images/logo.svg" alt="logo" />
-            <p>나이스옥션</p> -->
             <i class="icon-logo"></i>
           </a>
         </div>
         <div class="multi-search">
           <div class="left-side">
-            <div>사건번호</div>
+            <div class="categoty">
+              <button type="button" class="clear-button">
+                <span>사건번호</span>
+                <i class="icon icon-angle-down"></i>
+              </button>
+            </div>
             <div class="vertical-line"></div>
-            <div>
+            <div class="search-box">
               <input type="text" placeholder="주소 또는 사건번호 검색" />
             </div>
           </div>
           <div class="right-side">
-            <img src="/images/icon-search.svg" alt="search-icon" />
+            <button type="button" class="clear-button">
+              <img src="/images/icon-search.svg" alt="search-icon" />
+            </button>
           </div>
         </div>
       </div>
@@ -27,10 +32,30 @@
       <div class="right-menu">
         <div class="site-direction">
           <dl>
-            <dd>회원가입</dd>
-            <dd>로그인</dd>
-            <dd class="importance">회원혜택</dd>
-            <dd>고객센터</dd>
+            <dd class="logged-in">
+              <button type="button" class="needs-underline clear-button">
+                <span class="name">홍길동</span>님
+                <i class="icon icon-angle-down"></i>
+              </button>
+            </dd>
+            <dd>
+              <a href="#" class="needs-underline">회원가입</a>
+            </dd>
+            <dd><a href="#" class="needs-underline">로그인</a></dd>
+            <dd class="benefits">
+              <button type="button" class="needs-underline clear-button" id="benefitsToggleBtn">
+                <span>회원혜택</span>
+                <i class="icon icon-arrow"></i>
+              </button>
+
+              <div class="list-dropdown-popup benefits-popup" id="benefitsPopup">
+                <ul>
+                  <li><a href="#">등급 혜택</a></li>
+                  <li><a href="#">신규회원 혜택</a></li>
+                </ul>
+              </div>
+            </dd>
+            <dd><a href="#" class="needs-underline">고객센터</a></dd>
           </dl>
         </div>
       </div>

@@ -1,3 +1,9 @@
+:root{
+  --z-index-header: 1;
+  --z-index-lnb: 2;
+  --z-index-list-dropdown-popup: 3;
+}
+
 :root {
   --bg-color-01: #fff;
   --bg-color-02: #f6f7f9;
@@ -10,7 +16,7 @@
   --text-color-01: #000;
   --text-color-02: #595959;
   --text-color-03: #595959;
-  --text-color-04: #070606;
+  /* --text-color-04: #070606; */
   --text-color-05: #000;
   --text-color-06: #595959;
   --text-color-07: #0062a8;
@@ -23,12 +29,15 @@
   --text-color-14: #37404c;
   --text-color-15: #595959;
   --text-color-16: #0091da;
+  --text-color-17: #0e0e0e;
+  --text-color-18: #373737;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-light.svg");
   --icon-recent: url("/images/icon-lnb-recent-light.svg");
-  --icon-top: url("/images/icon-lnb-top-arrow-light.svg");
+  --icon-arrow: url("/images/icon-lnb-top-arrow-light.svg");
   --icon-theme: url("/images/icon-lnb-theme-light.svg");
   --icon-logo: url("/images/logo-light.png");
+  --icon-angle-down: url("/images/icon-angle-down-light.svg");
   --hover-color-01: #0091da;
 }
 
@@ -44,7 +53,7 @@
   --text-color-01: #fff;
   --text-color-02: #bbb;
   --text-color-03: #7e7e7e;
-  --text-color-04: #c5c5c5;
+  /* --text-color-04: #c5c5c5; */
   --text-color-05: #c5c5c5;
   --text-color-06: #c5c5c5;
   --text-color-07: #fff;
@@ -57,12 +66,15 @@
   --text-color-14: #cdcdcd;
   --text-color-15: #d8d8d8;
   --text-color-16: #a5ce4f;
+  --text-color-17: #d5d5d5;
+  --text-color-18: #c5c5c5;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-dark.svg");
   --icon-recent: url("/images/icon-lnb-recent-dark.svg");
-  --icon-top: url("/images/icon-lnb-top-arrow-dark.svg");
+  --icon-arrow: url("/images/icon-lnb-top-arrow-dark.svg");
   --icon-theme: url("/images/icon-lnb-theme-dark.svg");
   --icon-logo: url("/images/logo-dark.png");
+  --icon-angle-down: url("/images/icon-angle-down-dark.svg");
   --hover-color-01: #0091da;
 }
 

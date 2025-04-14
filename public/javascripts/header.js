@@ -15,4 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
       minHeader.style.display = "none";
     }
   });
+
+  const toggleBtn = document.getElementById("benefitsToggleBtn");
+  const popup = document.getElementById("benefitsPopup");
+
+  toggleBtn.addEventListener("click", () => {
+    popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!toggleBtn.contains(e.target) && !popup.contains(e.target)) {
+      popup.style.display = "none";
+    }
+  });
 });
