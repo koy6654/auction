@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // dropdown features
   function setupPopup(toggleId, popupId) {
     const toggleBtn = document.getElementById(toggleId);
     const popup = document.getElementById(popupId);
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setupPopup("min-categoryToggleBtn", "min-categoryPopup");
   setupPopup("applyForTrialToggleBtn", "applyForTrialPopup");
 
+  // main-menu-popup features
   const menuItems = document.querySelectorAll(".menu-area-item");
   const mainMenuPopup = document.querySelector(".main-menu-popup");
   const mainMenuPopupMin = document.querySelector(".main-menu-popup.min");

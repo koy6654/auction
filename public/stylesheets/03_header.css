@@ -306,7 +306,7 @@ header.header-normal
 header.header-normal .container .menu-area{
   position: relative;
   display: flex;
-  padding: 10px;
+  padding: 10px 10px 0px 10px;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -400,7 +400,6 @@ header.header-min {
   top: 0;
   left: 0;
   padding-right: 66px;
-  padding-top: 3px;
   width: 100%;
   height: 52px;
   min-width: 1150px;
@@ -430,6 +429,7 @@ header.header-min .container .menu-area {
 }
 
 header.header-min .container .menu-area .left-menu{
+  padding-left: 10px;
   padding-top: 4px;
 }
 
@@ -452,6 +452,7 @@ header.header-min .container .multi-search .left-side .search-box{
 }
 
 header.header-min .container .menu-area {
+  padding-top: 3px;
   height: 52px;
 }
 
@@ -471,22 +472,42 @@ header.header-min .container .menu-area .right-menu .avatar {
   z-index: var(--z-index-main-menu-popup);
   flex-direction: column;
   align-items: flex-start;
-  width: 1109px;
+  width: 100%;
   padding: 10px 1px 0px 1px;
   gap: 17px;
   border-radius: 13px;
-  border: 1px solid #616161;
-  background: #FFF;
-  top: 100%;
-  left: -18px;
+  border: 1px solid var(--border-color-06);
+  background-color: var(--bg-color-05);
+  top: calc(100% + 6px);
+  left: -4px;
 }
 
 .main-menu-popup .top-side{
   display: flex;
-  padding: 4px 12px;
   align-items: flex-start;
+  padding-left: 9px;
   /* gap: 10px; */
   align-self: stretch;
+}
+
+.main-menu-popup .top-side .has-icon {
+  display: block;
+  position: relative;
+}
+
+.main-menu-popup .top-side .has-icon::after {
+  content: "";
+  background-image: var(--icon-arrow-right);
+  width: 5px;
+  height: 8px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .main-menu-popup .top-side ul{
@@ -494,50 +515,79 @@ header.header-min .container .menu-area .right-menu .avatar {
 }
 
 .main-menu-popup .top-side ul li{
+  cursor: pointer;
+  width: 107px;
   padding: 8px 12px;
-}
-
-.main-menu-popup .top-side ul.public-auction{
-  margin-left:15px;
-}
-
-.main-menu-popup .top-side ul.map{}
-
-.main-menu-popup .top-side ul.edu-data{
-  margin-left: 138px;
-}
-
-.main-menu-popup .top-side ul.statistics{
-  margin-left: 53px;
-}
-
-.main-menu-popup .top-side ul.favorite{
-  margin-left: 11px;
-}
-
-.main-menu-popup .top-side ul.mypage{
-  margin-left: 56px;
-}
-
-
-.main-menu-popup .top-side li{
-  color: #000;
+  color: var(--text-color-05);
   font-family: Pretendard;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: -0.14px;
+  transition: opacity 0.2s ease;
+}
+
+.main-menu-popup .top-side ul.auction{
+  margin-left: 0px;
+  width: 107px;
+}
+
+.main-menu-popup .top-side ul.auction li .has-icon::after{
+  right: -6px;
+}
+
+.main-menu-popup .top-side ul.public-auction{
+  margin-left: 0px;
+}
+
+.main-menu-popup .top-side ul.map{}
+
+.main-menu-popup .top-side ul.edu-data{
+  margin-left: 20px;
+}
+
+.main-menu-popup .top-side ul.statistics{
+  margin-left: 42px;
+}
+
+.main-menu-popup .top-side ul.favorite{
+  margin-left: 0px;
+}
+
+.main-menu-popup .top-side ul.mypage{
+  margin-left: 21px;
+}
+
+.main-menu-popup .top-side ul.mypage li{
+  width: 127px;
+}
+
+.main-menu-popup .top-side li:hover {
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: var(--bg-color-06);
+}
+
+.main-menu-popup .top-side li:hover .has-icon::after {
+  opacity: 1;
 }
 
 .main-menu-popup .bottom-side{
   padding: 23px 10px;
   gap: 10px;
   align-self: stretch;
-  border-top: 1px solid #C7C7C7;
+  border-top: 1px solid var(--border-color-07);
   border-bottom-left-radius: 13px;
   border-bottom-right-radius: 13px;
-  background: #F5F5F5;
+  background-color: var(--bg-color-04);
+}
+
+.main-menu-popup .bottom-side .title {
+  color: var(--text-color-04);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14;
 }
 
 .main-menu-popup .bottom-side .support {
@@ -548,4 +598,23 @@ header.header-min .container .menu-area .right-menu .avatar {
 
 .main-menu-popup .bottom-side .support ul{
   display: flex;
+  gap: 10px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.main-menu-popup .bottom-side .support ul li a {
+  color: var(--text-color-19);
+  text-decoration: none;
+}
+
+.main-menu-popup .bottom-side .support ul li:hover a {
+  text-decoration: underline;
+  text-decoration-color: var(--text-color-19);
+}
+
+.main-menu-popup .bottom-side .support button{
+  color: var(--text-color-20);
+  font-weight: 600;
 }

@@ -9,15 +9,20 @@
   --bg-color-01: #fff;
   --bg-color-02: #f6f7f9;
   --bg-color-03: #e6e8ea;
+  --bg-color-04: #f5f5f5;
+  --bg-color-05: #fff;
+  --bg-color-06: #f8f8f8;
   --border-color-01: #dee0e5;
   --border-color-02: #d5d5d5;
   --border-color-03: #eaeaea;
   --border-color-04: transparent;
   --border-color-05: #e5e8eb;
+  --border-color-06: #616161;
+  --border-color-07: #c7c7c7;
   --text-color-01: #000;
   --text-color-02: #595959;
   --text-color-03: #595959;
-  /* --text-color-04: #070606; */
+  --text-color-04: #000;
   --text-color-05: #000;
   --text-color-06: #595959;
   --text-color-07: #0062a8;
@@ -32,6 +37,8 @@
   --text-color-16: #0091da;
   --text-color-17: #0e0e0e;
   --text-color-18: #373737;
+  --text-color-19: #37404C;
+  --text-color-20: #1A1A1A;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-light.svg");
   --icon-recent: url("/images/icon-lnb-recent-light.svg");
@@ -40,6 +47,7 @@
   --icon-logo: url("/images/logo-light.png");
   --icon-angle-down: url("/images/icon-angle-down-light.svg");
   --icon-angle-down-green: url("/images/icon-arrow-green.svg");
+  --icon-arrow-right: url("/images/icon-arrow-right-light.svg");
   --hover-color-01: #0091da;
 }
 
@@ -47,15 +55,20 @@
   --bg-color-01: #17171c;
   --bg-color-02: #101013;
   --bg-color-03: transparent;
+  --bg-color-04: #101013;
+  --bg-color-05: #101013;
+  --bg-color-06: #2E3851;
   --border-color-01: #51515f;
   --border-color-02: #4b4b4b;
   --border-color-03: #313131;
   --border-color-04: #fff;
   --border-color-05: #8b97ae;
+  --border-color-06: #808080;
+  --border-color-07: #34343E;
   --text-color-01: #fff;
   --text-color-02: #bbb;
   --text-color-03: #7e7e7e;
-  /* --text-color-04: #c5c5c5; */
+  --text-color-04: #d2d2d2;
   --text-color-05: #c5c5c5;
   --text-color-06: #c5c5c5;
   --text-color-07: #fff;
@@ -70,6 +83,8 @@
   --text-color-16: #a5ce4f;
   --text-color-17: #d5d5d5;
   --text-color-18: #c5c5c5;
+  --text-color-19: #C5C5C5;
+  --text-color-20: #fff;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-dark.svg");
   --icon-recent: url("/images/icon-lnb-recent-dark.svg");
@@ -78,6 +93,7 @@
   --icon-logo: url("/images/logo-dark.png");
   --icon-angle-down: url("/images/icon-angle-down-dark.svg");
   --icon-angle-down-green: url("/images/icon-lnb-top-arrow-dark.svg");
+  --icon-arrow-right: url("/images/icon-arrow-right-dark.svg");
   --hover-color-01: #0091da;
 }
 
