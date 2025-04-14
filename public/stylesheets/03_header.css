@@ -481,6 +481,10 @@ header.header-min .container .menu-area .right-menu .avatar {
   left: -18px;
 }
 
+.min-main-menu-popup{
+  display: flex;
+}
+
 .main-menu-popup .top-side{
   display: flex;
   padding: 4px 12px;

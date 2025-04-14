@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const menuItems = document.querySelectorAll(".menu-area-item");
   const mainMenuPopup = document.querySelector(".main-menu-popup");
+  const mainMenuPopupMin = document.querySelector(".main-menu-popup.min");
   const menuArea = document.querySelector(".menu-area");
   let timeout;
 
@@ -46,12 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("mouseenter", () => {
       clearTimeout(timeout);
       mainMenuPopup.style.display = "flex";
+      mainMenuPopupMin.style.display = "flex";
     });
   });
 
   menuArea.addEventListener("mouseleave", () => {
     timeout = setTimeout(() => {
       mainMenuPopup.style.display = "none";
+      mainMenuPopupMin.style.display = "none";
     }, 100);
   });
 
@@ -59,14 +62,29 @@ document.addEventListener("DOMContentLoaded", function () {
     clearTimeout(timeout);
   });
 
+  mainMenuPopupMin.addEventListener("mouseenter", () => {
+    clearTimeout(timeout);
+  });
+
   mainMenuPopup.addEventListener("mouseleave", () => {
     mainMenuPopup.style.display = "none";
+  });
+
+  mainMenuPopupMin.addEventListener("mouseleave", () => {
+    mainMenuPopupMin.style.display = "none";
   });
 
   const closeButton = mainMenuPopup.querySelector(".support button");
   if (closeButton) {
     closeButton.addEventListener("click", () => {
       mainMenuPopup.style.display = "none";
+    });
+  }
+
+  const closeButtonMin = mainMenuPopupMin.querySelector(".support button");
+  if (closeButtonMin) {
+    closeButtonMin.addEventListener("click", () => {
+      mainMenuPopupMin.style.display = "none";
     });
   }
 });
