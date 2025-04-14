@@ -11,10 +11,22 @@
         <div class="multi-search">
           <div class="left-side">
             <div class="categoty">
-              <button type="button" class="clear-button">
+              <button type="button" class="clear-button" id="categoryToggleBtn">
                 <span>사건번호</span>
                 <i class="icon icon-angle-down"></i>
               </button>
+
+              <div class="list-dropdown-popup" id="categoryPopup">
+                <ul>
+                  <li><button type="button" class="active">사건번호</button></li>
+                  <li><button type="button">관심메모</button></li>
+                  <li><button type="button">#태그</button></li>
+                  <li><button type="button">용도</button></li>
+                  <li><button type="button">감평사</button></li>
+                  <li><button type="button">채무자</button></li>
+                  <li><button type="button">채권자</button></li>
+                </ul>
+              </div>
             </div>
             <div class="vertical-line"></div>
             <div class="search-box">
@@ -38,7 +50,7 @@
                 <i class="icon icon-angle-down"></i>
               </button>
 
-              <div class="list-dropdown-popup benefits-popup" id="loggedInPopup">
+              <div class="list-dropdown-popup" id="loggedInPopup">
                 <ul>
                   <li><a href="#">sub-menu1</a></li>
                   <li><a href="#">sub-menu2</a></li>
@@ -57,7 +69,7 @@
                 <i class="icon icon-arrow"></i>
               </button>
 
-              <div class="list-dropdown-popup benefits-popup" id="benefitsPopup">
+              <div class="list-dropdown-popup" id="benefitsPopup">
                 <ul>
                   <li><a href="#">등급 혜택</a></li>
                   <li><a href="#">신규회원 혜택</a></li>
@@ -85,8 +97,19 @@
       </div>
       <div class="right-menu">
         <dl>
-          <dd>요금안내</dd>
-          <dd>무료체험신청</dd>
+          <dd><a href="#" class="needs-underline">요금안내</a></dd>
+          <dd>
+            <button type="button" class="needs-underline clear-button" id="applyForTrialToggleBtn">
+              <span>무료체험신청</span>
+              <i class="icon icon-arrow apply-for-trial"></i>
+            </button>
+
+            <div class="contents-dropdown-popup" id="applyForTrialPopup">
+              <div class="contents">
+                <img src="/images/contents-apply-for-trial.svg">
+              </div>
+            </div>
+          </dd>
         </dl>
       </div>
     </div>

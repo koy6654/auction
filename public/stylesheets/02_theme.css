@@ -38,6 +38,7 @@
   --icon-theme: url("/images/icon-lnb-theme-light.svg");
   --icon-logo: url("/images/logo-light.png");
   --icon-angle-down: url("/images/icon-angle-down-light.svg");
+  --icon-angle-down-green: url("/images/icon-arrow-green.svg");
   --hover-color-01: #0091da;
 }
 
@@ -75,6 +76,7 @@
   --icon-theme: url("/images/icon-lnb-theme-dark.svg");
   --icon-logo: url("/images/logo-dark.png");
   --icon-angle-down: url("/images/icon-angle-down-dark.svg");
+  --icon-angle-down-green: url("/images/icon-lnb-top-arrow-dark.svg");
   --hover-color-01: #0091da;
 }
 
