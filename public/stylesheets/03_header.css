@@ -233,6 +233,7 @@ header.header-normal
   .site-direction
   dl
   dd.logged-in{
+    position: relative;
     display: flex;
     align-items: center;
   }

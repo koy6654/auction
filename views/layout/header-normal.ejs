@@ -33,10 +33,19 @@
         <div class="site-direction">
           <dl>
             <dd class="logged-in">
-              <button type="button" class="needs-underline clear-button">
+              <button type="button" class="needs-underline clear-button" id="loggedInToggleBtn">
                 <span class="name">홍길동</span>님
                 <i class="icon icon-angle-down"></i>
               </button>
+
+              <div class="list-dropdown-popup benefits-popup" id="loggedInPopup">
+                <ul>
+                  <li><a href="#">sub-menu1</a></li>
+                  <li><a href="#">sub-menu2</a></li>
+                  <li><a href="#">sub-menu3</a></li>
+                  <li><a href="#">...</a></li>
+                </ul>
+              </div>
             </dd>
             <dd>
               <a href="#" class="needs-underline">회원가입</a>

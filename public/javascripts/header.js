@@ -16,16 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const toggleBtn = document.getElementById("benefitsToggleBtn");
-  const popup = document.getElementById("benefitsPopup");
+  function setupPopup(toggleId, popupId) {
+    const toggleBtn = document.getElementById(toggleId);
+    const popup = document.getElementById(popupId);
 
-  toggleBtn.addEventListener("click", () => {
-    popup.style.display = popup.style.display === "flex" ? "none" : "flex";
-  });
+    toggleBtn.addEventListener("click", () => {
+      popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+    });
 
-  document.addEventListener("click", (e) => {
-    if (!toggleBtn.contains(e.target) && !popup.contains(e.target)) {
-      popup.style.display = "none";
-    }
-  });
+    document.addEventListener("click", (e) => {
+      if (!toggleBtn.contains(e.target) && !popup.contains(e.target)) {
+        popup.style.display = "none";
+      }
+    });
+  }
+
+  setupPopup("benefitsToggleBtn", "benefitsPopup");
+  setupPopup("loggedInToggleBtn", "loggedInPopup");
 });
