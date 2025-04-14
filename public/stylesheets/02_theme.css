@@ -57,7 +57,7 @@
   --text-color-14: #cdcdcd;
   --text-color-15: #d8d8d8;
   --text-color-16: #a5ce4f;
-  --scrollbar-thumb-color: rgba(4, 2, 2, 0.5);
+  --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-dark.svg");
   --icon-recent: url("/images/icon-lnb-recent-dark.svg");
   --icon-top: url("/images/icon-lnb-top-arrow-dark.svg");
