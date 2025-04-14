@@ -30,7 +30,7 @@ header.header-min .clear-button{
   align-items: center;
 }
 
-header.header-normal .container{
+header.header-normal .container {
   width: 1084px;
   height: 104px;
   min-width: 1084px;
@@ -283,7 +283,7 @@ header.header-normal
   font-weight: 500;
 }
 
-.list-dropdown-popup li .active{
+.list-dropdown-popup li.active{
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -303,42 +303,48 @@ header.header-normal
 }
 
 /* menu-area */
-header.header-normal .container .menu-area,
-header.header-min .container .menu-area {
+header.header-normal .container .menu-area{
   display: flex;
   padding: 10px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
-header.header-normal .container .menu-area .left-menu ul,
-header.header-min .container .menu-area .left-menu ul {
+header.header-normal .container .menu-area .left-menu menu{
   display: flex;
-  gap: 58px;
+  gap: 45px;
 }
 
-header.header-normal .container .menu-area .left-menu ul li,
-header.header-min .container .menu-area .left-menu ul li {
+header.header-normal .container .menu-area .left-menu menu li,
+header.header-min .container .menu-area .left-menu menu li {
   color: var(--text-color-06);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20.3px;
+  padding: 0 15px 10px;
 }
 
-header.header-normal .container .menu-area .left-menu ul li.active,
-header.header-min .container .menu-area .left-menu ul li.active {
+header.header-normal .container .menu-area .left-menu menu li:hover,
+header.header-min .container .menu-area .left-menu menu li:hover{
   color: var(--text-color-07);
+  border-bottom: 3px solid var(--text-color-07);
+}
+
+header.header-normal .container .menu-area .left-menu menu li.active,
+header.header-min .container .menu-area .left-menu menu li.active {
+  color: var(--text-color-07);
+  border-bottom: 3px solid var(--text-color-07);
 }
 
 header.header-normal .container .menu-area .right-menu dl,
-header.header-min .container .menu-area .right-menu dl {
+header.header-min .container .menu-area .left-menu dl {
   display: flex;
   gap: 19px;
 }
 
 header.header-normal .container .menu-area .right-menu dl dd,
-header.header-min .container .menu-area .right-menu dl dd {
+header.header-min .container .menu-area .left-menu dl dd {
   color: var(--text-color-08);
   font-weight: 700;
   line-height: 20.3px;
@@ -388,11 +394,12 @@ header.header-normal .container .menu-area .right-menu dl dd .needs-underline:ho
 header.header-min {
   display: none;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   position: fixed;
   top: 0;
   left: 0;
   padding-right: 66px;
+  padding-top: 3px;
   width: 100%;
   height: 52px;
   min-width: 1150px;
@@ -412,6 +419,25 @@ header.header-min .container {
 
 header.header-min .container {
   height: 52px;
+}
+
+header.header-min .container .menu-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+header.header-min .container .menu-area .left-menu{
+  padding-top: 4px;
+}
+
+header.header-min .container .menu-area .left-menu menu {
+  display: flex;
+  gap: 35px;
+}
+
+header.header-min .container .menu-area .left-menu menu li {
+  padding: 10px 10px 12px;
 }
 
 header.header-min .container .multi-search {
