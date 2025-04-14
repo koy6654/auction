@@ -19,6 +19,7 @@
     <main>
       <div>
         <h2>button</h2>
+        <br />
         <button type="button" class="button basic-white">basic_white</button>
         <button type="button" class="button basic-1">basic1</button>
         <button type="button" class="button basic-2">basic2</button>
@@ -30,6 +31,7 @@
       </div>
       <div>
         <h2>radio</h2>
+        <br />
         <label class="radio-label">
           <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-1" checked />
           <div class="radio-visual">
@@ -54,6 +56,22 @@
           </div>
           <span class="radio-text">라디오-3</span>
         </label>
+      </div>
+      <div">
+        <h2>switch</h2><h4>(unit/toggle)</h4>
+        <br />
+        <div class="switch-unit">
+          <input type="radio" name="unit-group-1" id="switch-unit-id-1" checked>
+          <label class="switch-unit-label" for="switch-unit-id-1">㎡</label>
+          <input type="radio" name="unit-group-1" id="unit-id-2">
+          <label class="switch-unit-label" for="unit-id-2">평</label>
+        </div>
+        <div class="switch-toggle">
+          <input class="switch-toggle-input" type="checkbox" id="switch-toggle-id-1">
+          <label class="switch-toggle-label" for="switch-toggle-id-1">
+            <div class="switch-toggle-circle"></div>
+          </label>
+        </div>
       </div>
     </main>
     <% include ../layout/lnb.ejs %> <% include ../layout/footer.ejs %>

@@ -143,3 +143,71 @@ button.button.basic-7 {
 .radio-input:checked + .radio-visual .radio-outer {
   background: #458dd6;
 }
+
+.switch-unit {
+  padding: 2px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  display: inline-flex;
+  gap: 2px;
+  font-family: Pretendard;
+}
+
+.switch-unit input[type="radio"] {
+  display: none;
+}
+
+.switch-unit-label {
+  padding: 5px 6px;
+  border-radius: 4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #9794AA;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.switch-unit input[type="radio"]:checked + .switch-unit-label {
+  background: white;
+  color: black;
+}
+
+.switch-toggle {
+  display: inline-block;
+}
+
+.switch-toggle-input {
+  display: none;
+}
+
+.switch-toggle-label {
+  width: 42px;
+  height: 24.5px;
+  background: #D1D5DB;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0 3.5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.switch-toggle-circle {
+  width: 17.5px;
+  height: 17.5px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.switch-toggle-input:checked + .switch-toggle-label {
+  background: #458DD6;
+}
+
+.switch-toggle-input:checked + .switch-toggle-label .switch-toggle-circle {
+  transform: translateX(17px);
+}
