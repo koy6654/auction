@@ -14,12 +14,41 @@
       </div>
       <div class="right-menu">
         <div class="multi-search">
-          <div>사건번호</div>
-          <div>
-            <input type="text" placeholder="주소 또는 사건번호 검색" />
+          <div class="left-side">
+            <div class="categoty">
+              <button type="button" class="clear-button" id="min-categoryToggleBtn">
+                <span>사건번호</span>
+                <i class="icon icon-angle-down"></i>
+              </button>
+
+              <div class="list-dropdown-popup" id="min-categoryPopup">
+                <ul>
+                  <li><button type="button" class="active">사건번호</button></li>
+                  <li><button type="button">관심메모</button></li>
+                  <li><button type="button">#태그</button></li>
+                  <li><button type="button">용도</button></li>
+                  <li><button type="button">감평사</button></li>
+                  <li><button type="button">채무자</button></li>
+                  <li><button type="button">채권자</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="search-box">
+              <input type="text" placeholder="주소 또는 사건번호 검색" />
+            </div>
+          </div>
+          <div class="right-side">
+            <button type="button" class="clear-button">
+              <img src="/images/icon-search.svg" alt="search-icon" />
+            </button>
           </div>
         </div>
-        <div class="avatar">avatar</div>
+        <div class="avatar">
+          <button type="button" class="clear-button">
+            <img src="/images/icon-avatar.svg" />
+          </button>
+        </div>
       </div>
     </div>
   </div>

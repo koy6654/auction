@@ -34,5 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
   setupPopup("benefitsToggleBtn", "benefitsPopup");
   setupPopup("loggedInToggleBtn", "loggedInPopup");
   setupPopup("categoryToggleBtn", "categoryPopup");
+  setupPopup("min-categoryToggleBtn", "min-categoryPopup");
   setupPopup("applyForTrialToggleBtn", "applyForTrialPopup");
 });
