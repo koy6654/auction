@@ -41,54 +41,54 @@ document.addEventListener("DOMContentLoaded", function () {
   setupPopup("applyForTrialToggleBtn", "applyForTrialPopup");
 
   // main-menu-popup features
-  // const menuItems = document.querySelectorAll(".menu-area-item");
-  // const mainMenuPopup = document.querySelector(".main-menu-popup");
-  // const mainMenuPopupMin = document.querySelector(".main-menu-popup.min");
-  // const menuArea = document.querySelector(".menu-area");
-  // let timeout;
+  const menuItems = document.querySelectorAll(".menu-area-item");
+  const mainMenuPopup = document.querySelector(".main-menu-popup");
+  const mainMenuPopupMin = document.querySelector(".main-menu-popup.min");
+  const menuArea = document.querySelector(".menu-area");
+  let timeout;
 
-  // menuItems.forEach((item) => {
-  //   item.addEventListener("mouseenter", () => {
-  //     clearTimeout(timeout);
-  //     mainMenuPopup.style.display = "flex";
-  //     mainMenuPopupMin.style.display = "flex";
-  //   });
-  // });
+  menuItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      clearTimeout(timeout);
+      mainMenuPopup.style.display = "flex";
+      mainMenuPopupMin.style.display = "flex";
+    });
+  });
 
-  // menuArea.addEventListener("mouseleave", () => {
-  //   timeout = setTimeout(() => {
-  //     mainMenuPopup.style.display = "none";
-  //     mainMenuPopupMin.style.display = "none";
-  //   }, 100);
-  // });
+  menuArea.addEventListener("mouseleave", () => {
+    timeout = setTimeout(() => {
+      mainMenuPopup.style.display = "none";
+      mainMenuPopupMin.style.display = "none";
+    }, 100);
+  });
 
-  // mainMenuPopup.addEventListener("mouseenter", () => {
-  //   clearTimeout(timeout);
-  // });
+  mainMenuPopup.addEventListener("mouseenter", () => {
+    clearTimeout(timeout);
+  });
 
-  // mainMenuPopupMin.addEventListener("mouseenter", () => {
-  //   clearTimeout(timeout);
-  // });
+  mainMenuPopupMin.addEventListener("mouseenter", () => {
+    clearTimeout(timeout);
+  });
 
-  // mainMenuPopup.addEventListener("mouseleave", () => {
-  //   mainMenuPopup.style.display = "none";
-  // });
+  mainMenuPopup.addEventListener("mouseleave", () => {
+    mainMenuPopup.style.display = "none";
+  });
 
-  // mainMenuPopupMin.addEventListener("mouseleave", () => {
-  //   mainMenuPopupMin.style.display = "none";
-  // });
+  mainMenuPopupMin.addEventListener("mouseleave", () => {
+    mainMenuPopupMin.style.display = "none";
+  });
 
-  // const closeButton = mainMenuPopup.querySelector(".support button");
-  // if (closeButton) {
-  //   closeButton.addEventListener("click", () => {
-  //     mainMenuPopup.style.display = "none";
-  //   });
-  // }
+  const closeButton = mainMenuPopup.querySelector(".support button");
+  if (closeButton) {
+    closeButton.addEventListener("click", () => {
+      mainMenuPopup.style.display = "none";
+    });
+  }
 
-  // const closeButtonMin = mainMenuPopupMin.querySelector(".support button");
-  // if (closeButtonMin) {
-  //   closeButtonMin.addEventListener("click", () => {
-  //     mainMenuPopupMin.style.display = "none";
-  //   });
-  // }
+  const closeButtonMin = mainMenuPopupMin.querySelector(".support button");
+  if (closeButtonMin) {
+    closeButtonMin.addEventListener("click", () => {
+      mainMenuPopupMin.style.display = "none";
+    });
+  }
 });
