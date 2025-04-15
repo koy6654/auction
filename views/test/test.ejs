@@ -6,77 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/02_theme.css" />
     <link rel="stylesheet" href="/stylesheets/06_component.css" />
 
     <title><%= title %></title>
   </head>
   <body>
-    <div style="background-color: #E5E5E5; padding: 50px">
+    <main>
+      <!-- Button -->
       <div>
-        <%- include('../components/button', { 
-          width: '125px',
-          height: '30px',
-          theme: 'white',
-          label: '버튼',
-          fontSize: '16px',
-        }) %>
-        <%- include('../components/blue-print-button', { 
-          label: '버튼',
-        }) %>
+        <h2>button</h2>
+        <button type="button" class="button basic-white">basic_white</button>
+        <button type="button" class="button basic-1">basic1</button>
+        <button type="button" class="button basic-2">basic2</button>
+        <button type="button" class="button basic-3">basic3</button>
+        <button type="button" class="button basic-4">basic4</button>
+        <button type="button" class="button basic-5">basic5</button>
+        <button type="button" class="button basic-6">basic6</button>
+        <button type="button" class="button basic-7">basic7</button>
       </div>
+
+      <br />
+      <!-- Radio -->
       <div>
-        <%- include('../components/button', { 
-          width: '125px',
-          height: '30px',
-          theme: 'skyBlue',
-          label: '버튼',
-          fontSize: '16px',
-        }) %>
-        <%- include('../components/button', { 
-          width: '125px',
-          height: '30px',
-          theme: 'yellow',
-          label: '버튼',
-          fontSize: '16px',
-        }) %>
-        <%- include('../components/button', { 
-          width: '125px',
-          height: '30px',
-          theme: 'silver',
-          label: '버튼',
-          fontSize: '16px',
-        }) %>
+        <h2>radio</h2>
+        <label class="radio-label">
+          <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-1" checked />
+          <div class="radio-visual">
+            <div class="radio-outer"></div>
+            <div class="radio-inner"></div>
+          </div>
+          <span class="radio-text">라디오-1</span>
+        </label>
+        <label class="radio-label">
+          <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-2" />
+          <div class="radio-visual">
+            <div class="radio-outer"></div>
+            <div class="radio-inner"></div>
+          </div>
+          <span class="radio-text">라디오-2</span>
+        </label>
+        <label class="radio-label">
+          <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-3" />
+          <div class="radio-visual">
+            <div class="radio-outer"></div>
+            <div class="radio-inner"></div>
+          </div>
+          <span class="radio-text">라디오-3</span>
+        </label>
       </div>
+
+      <br />
+      <!-- Switch -->
       <div>
-        <%- include('../components/button', { 
-          width: '125px',
-          height: '30px',
-          theme: 'navyBlue',
-          label: '버튼',
-          fontSize: '16px',
-        }) %>
-        <%- include('../components/button', { 
-          width: '125px',
-          height: '30px',
-          theme: 'red',
-          label: '버튼',
-          fontSize: '16px',
-        }) %>
-        <%- include('../components/button', { 
-          width: '125px',
-          height: '30px',
-          theme: 'silverDarkMode',
-          label: '버튼',
-          fontSize: '16px',
-        }) %>
-        <%- include('../components/button', { 
-          width: '125px',
-          height: '30px',
-          theme: 'transparent',
-          label: '버튼',
-          fontSize: '16px',
-        }) %>
+        <div style="display: flex; align-items: center;"><h2>switch</h2>&nbsp;&nbsp;<h4>(unit/toggle)</h4></div>
+        <div class="switch-unit">
+          <input type="radio" name="unit-group-1" id="switch-unit-id-1" checked>
+          <label class="switch-unit-label" for="switch-unit-id-1">㎡</label>
+          <input type="radio" name="unit-group-1" id="unit-id-2">
+          <label class="switch-unit-label" for="unit-id-2">평</label>
+        </div>
+        <div class="switch-toggle">
+          <input class="switch-toggle-input" type="checkbox" id="switch-toggle-id-1">
+          <label class="switch-toggle-label" for="switch-toggle-id-1">
+            <div class="switch-toggle-circle"></div>
+          </label>
+        </div>
       </div>
-    </div>
+
+      <br />
+      <!-- Input -->
+      <div>
+        <h2>input</h2>
+        <div class="input">
+          <div class="input-label">
+            <div>Input label</div>
+            <div class="input-label-optional">(Optional)</div>
+          </div>
+          <input
+            id="input-id"
+            type="text"
+            class="input-field"
+            placeholder="placehold"
+          />
+          <div class="input-alert">
+            <div>Input label</div>
+            <div>(Optional)</div>
+          </div>
+        </div>
+        <div class="input">
+          <div class="input-label">
+            <div>Input label</div>
+            <div class="input-label-optional">(Optional)</div>
+          </div>
+          <input
+            id="input-id"
+            type="text"
+            class="input-field"
+            placeholder="placehold"
+            disabled
+          />
+          <div class="input-alert">
+            <div>Input label</div>
+            <div>(Optional)</div>
+          </div>
+        </div>
+      </div>
+      
+      <br />
+      <!-- Select -->
+      <div>
+        <h2>select</h2>
+        
+        <div class="select">
+          <button class="select-button" type="button">
+            <span>Select with Javascript</span>
+            <i></i>
+          </button>
+          <div class="select-dropdown">
+            <ul>
+              <li><button type="button">KOR</button></li>
+              <li><button type="button">USA</button></li>
+              <li><button type="button">NER</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/javascripts/component.js"></script>
   </body>
 </html>

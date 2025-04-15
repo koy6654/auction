@@ -17,9 +17,9 @@
     <% include ../layout/header-normal.ejs %> <% include
     ../layout/header-min.ejs %>
     <main>
+      <!-- Button -->
       <div>
         <h2>button</h2>
-        <br />
         <button type="button" class="button basic-white">basic_white</button>
         <button type="button" class="button basic-1">basic1</button>
         <button type="button" class="button basic-2">basic2</button>
@@ -29,9 +29,11 @@
         <button type="button" class="button basic-6">basic6</button>
         <button type="button" class="button basic-7">basic7</button>
       </div>
+
+      <br />
+      <!-- Radio -->
       <div>
         <h2>radio</h2>
-        <br />
         <label class="radio-label">
           <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-1" checked />
           <div class="radio-visual">
@@ -57,9 +59,11 @@
           <span class="radio-text">라디오-3</span>
         </label>
       </div>
+
+      <br />
+      <!-- Switch -->
       <div>
-        <h2>switch</h2><h4>(unit/toggle)</h4>
-        <br />
+        <div style="display: flex; align-items: center;"><h2>switch</h2>&nbsp;&nbsp;<h4>(unit/toggle)</h4></div>
         <div class="switch-unit">
           <input type="radio" name="unit-group-1" id="switch-unit-id-1" checked>
           <label class="switch-unit-label" for="switch-unit-id-1">㎡</label>
@@ -73,9 +77,11 @@
           </label>
         </div>
       </div>
+
+      <br />
+      <!-- Input -->
       <div>
         <h2>input</h2>
-        <br />
         <div class="input">
           <div class="input-label">
             <div>Input label</div>
@@ -90,6 +96,43 @@
           <div class="input-alert">
             <div>Input label</div>
             <div>(Optional)</div>
+          </div>
+        </div>
+        <div class="input">
+          <div class="input-label">
+            <div>Input label</div>
+            <div class="input-label-optional">(Optional)</div>
+          </div>
+          <input
+            id="input-id"
+            type="text"
+            class="input-field"
+            placeholder="placehold"
+            disabled
+          />
+          <div class="input-alert">
+            <div>Input label</div>
+            <div>(Optional)</div>
+          </div>
+        </div>
+      </div>
+      
+      <br />
+      <!-- Select -->
+      <div>
+        <h2>select</h2>
+        
+        <div class="select">
+          <button class="select-button" type="button">
+            <span>Select with Javascript</span>
+            <i></i>
+          </button>
+          <div class="select-dropdown">
+            <ul>
+              <li><button type="button">KOR</button></li>
+              <li><button type="button">USA</button></li>
+              <li><button type="button">NER</button></li>
+            </ul>
           </div>
         </div>
       </div>
