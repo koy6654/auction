@@ -650,8 +650,9 @@ header.header-min .container .menu-area .right-menu .avatar {
   color: var(--text-color-20);
   font-weight: 600;
 }
+
 /* searhch-popup */
-header .backdrop{
+header .under-prepare .backdrop{
   display: block;
   position: fixed;
   top: 0;
@@ -662,16 +663,11 @@ header .backdrop{
   background: var(--bg-color-07);
 }
 
-header .search-popup {
-  position: absolute;
+header .under-prepare .search-popup {
   display: flex;
-  top:0;
-  left:0;
-  z-index: var(--z-index-main-search-popup);
-}
-
-header .search-popup .container{
-  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   position: absolute;
   top: -22px;
   left: 150px;
@@ -679,4 +675,110 @@ header .search-popup .container{
   height: 866px;
   border-radius: 16px;
   background: var(--bg-color-01);
+  z-index: var(--z-index-main-search-popup);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27.3px;
+}
+
+header .under-prepare .search-popup .top-side {
+  padding: 70px 25px 0px 9px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 29px;
+  width: 100%;
+}
+
+header .under-prepare .search-popup .top-side .left-side {
+  padding: 10px;
+  width: 298px;
+  height: 748px;
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-info,
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-word-lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-info .title {
+  color: var(--text-color-01);
+  font-size: 15px;
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-info .delete {
+  color: var(--text-color-22);
+  font-size: 13px;
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-word-container {
+  height: 701px;
+  overflow-y: auto;
+  padding-right: 3px;
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-word-lists .title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color-23);
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-word-lists .delete {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color-24);
+  font-size: 13px;
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-word-lists .delete time{
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+}
+
+header .under-prepare .search-popup .top-side .left-side .recent-search .recent-search-word-lists .delete button {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: var(--icon-x);
+}
+
+header .under-prepare .search-popup .top-side .right-side {
+  width: 534px;
+}
+
+header .under-prepare .search-popup .top-side .right-side .recent-content-counts ul {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+header .under-prepare .search-popup .bottom-side {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 28px 10px 17px;
+  border-top: 1px solid var(--border-color-08);
+  color: var(--text-color-21);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.3px;
+}
+
+header .under-prepare .search-popup .bottom-side ul {
+  display: flex;
+  gap: 10px;
 }

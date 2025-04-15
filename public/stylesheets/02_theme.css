@@ -23,6 +23,7 @@
   --border-color-05: #e5e8eb;
   --border-color-06: #616161;
   --border-color-07: #c7c7c7;
+  --border-color-08: #ececec;
   --text-color-01: #000;
   --text-color-02: #595959;
   --text-color-03: #595959;
@@ -43,6 +44,10 @@
   --text-color-18: #373737;
   --text-color-19: #37404C;
   --text-color-20: #1A1A1A;
+  --text-color-21: #000;
+  --text-color-22: #595959;
+  --text-color-23: #333;
+  --text-color-24: #888;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-light.svg");
   --icon-recent: url("/images/icon-lnb-recent-light.svg");
@@ -52,6 +57,7 @@
   --icon-angle-down: url("/images/icon-angle-down-light.svg");
   --icon-angle-down-green: url("/images/icon-arrow-green.svg");
   --icon-arrow-right: url("/images/icon-arrow-right-light.svg");
+  --icon-x: url("/images/icon-x-light.svg");
   --hover-color-01: #0091da;
 }
 
@@ -70,6 +76,7 @@
   --border-color-05: #8b97ae;
   --border-color-06: #808080;
   --border-color-07: #34343E;
+  --border-color-08: #707070;
   --text-color-01: #fff;
   --text-color-02: #bbb;
   --text-color-03: #7e7e7e;
@@ -90,6 +97,10 @@
   --text-color-18: #c5c5c5;
   --text-color-19: #C5C5C5;
   --text-color-20: #fff;
+  --text-color-21: #e9e9e9;
+  --text-color-22: #b0b0b0;
+  --text-color-23: #d4d4d4;
+  --text-color-24: #AFAFAF;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --icon-favorite: url("/images/icon-lnb-favorite-dark.svg");
   --icon-recent: url("/images/icon-lnb-recent-dark.svg");
@@ -99,10 +110,11 @@
   --icon-angle-down: url("/images/icon-angle-down-dark.svg");
   --icon-angle-down-green: url("/images/icon-lnb-top-arrow-dark.svg");
   --icon-arrow-right: url("/images/icon-arrow-right-dark.svg");
+  --icon-x: url("/images/icon-x-dark.svg");
   --hover-color-01: #0091da;
 }
 
-/* Chrome, Edge, Safari */
+/* Chrome, Edge, Safari 브라우저 기본*/
 ::-webkit-scrollbar {
   width: 8px; /* 스크롤바 너비 */
   height: 8px;
@@ -122,4 +134,23 @@
   display: none;
   height: 0;
   width: 0;
+}
+
+/* 특정 div */
+.custom-scroll {
+  overflow-y: auto;
+}
+
+/* Webkit 브라우저용 스크롤바 스타일 */
+.custom-scroll::-webkit-scrollbar {
+  width: 4px; /* 얇은 스크롤바 */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #ccc; /* 회색 스크롤바 핸들 */
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #f4f6f8; /* 트랙 배경 */
 }

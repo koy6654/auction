@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mainMenuPopup = document.querySelector(".main-menu-popup");
   const mainMenuPopupMin = document.querySelector(".main-menu-popup.min");
   const menuArea = document.querySelector(".menu-area");
+  const delayMs = 100;
   let timeout;
 
   menuItems.forEach((item) => {
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     timeout = setTimeout(() => {
       mainMenuPopup.style.display = "none";
       mainMenuPopupMin.style.display = "none";
-    }, 100);
+    }, delayMs);
   });
 
   mainMenuPopup.addEventListener("mouseenter", () => {

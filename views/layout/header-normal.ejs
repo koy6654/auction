@@ -8,74 +8,107 @@
             <i class="icon-logo"></i>
           </a>
         </div>
-				<div>
-
-				<div class="backdrop"></div>
+        
+				<div class="under-prepare">
+				  <div class="backdrop"></div>
 					<div class="search-popup">
-						<div class='container'>
-							<div class="top-side">
-								<div class="left-side">
-									<div class="recent-search">
-										<div>
-											<h6>최근 검색어</h6>
-											<p>전체삭제</p>
-										</div>
-										<div>
-											<p>서울중앙</p>
-											<div>
-												<date>04.05</date>
-												<button type="button">x</button>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="right-side">
-									<div>
-										<ul>
-											<li><button type='button'>최근 검색 2</button></li>
-											<li><button type='button'>최근 열람 20</button></li>
-										</ul>
-									</div>
+            <div class="top-side">
+              <div class="left-side">
+                <div class="recent-search">
+                  <div class="recent-search-info">
+                    <h4 class="title">최근 검색어</h4>
+                    <p class="delete">전체삭제</p>
+                  </div>
+                  <div class="recent-search-word-container custom-scroll">
+                  <% 
+                    // 최근 검색어가 많은경우를 대비하여, 스크롤 표시를 볼 수 있도록 처리하였습니다
+                    // 대략 24개 까지는 스크롤이 생기지 않습니다
+                    const now = new Date();
+                    const currentMonth = String(now.getMonth() + 1).padStart(2, '0');
 
-									<div>
-										<div>
-											<div>
-	
-											</div>
-											<div>
-												<img src="" />이미지
-											</div>
-										</div>
-										<div>
-											<div>
-												<button type="button">#유찰2회</button>
-												<button type="button">#농지취즉자격증명</button>
-											</div>
-											<div>
-												<button type="button">하트</button>
-												<button type="button">벨</button>
-											</div>
-										</div>
-										<div>
-											<div>별5개</div>
-											<p>관심물건 메모...</p>
-										</div>
+                    for (let i = 0; i < 31; i++) { 
+                      const day = String(i + 1).padStart(2, '0'); 
+                  %>
+                    <div class="recent-search-word-lists">
+                      <p class="title">서울중앙</p>
+                      <div class="delete">
+                        <time><%= currentMonth %>.<%= day %></time>
+                        <button type="button" class="clear-button"></button>
+                      </div>
+                    </div>
+                    <% } %>
+                  </div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="recent-content-counts">
+                  <ul>
+                    <li><button type='button'>최근 검색 2</button></li>
+                    <li><button type='button'>최근 열람 20</button></li>
+                  </ul>
+                </div>
 
-									</div>
-
-								</div>
-							</div>
-							<div class="bottom-side">
-								<ul>
-									<li>경매 종합검색</li>
-									<li>공매 종합검색</li>
-									<li>지도검색</li>
-								</ul>
-								<button type="button" class="clear-button">
-									<span>닫기</span>
-								</button>
-							</div>
-						</div>
+                <div class="recent-content-lists">
+                  <div class="lists">
+                    <div class="left">
+                      <div class="item-info">
+                        <span>서울중앙 2024타경000000[1]</span>
+                        <div>
+                          <div class="bedge">위험물저장 및 처리시설</div>
+                          <div class="bedge">진행중</div>
+                        </div>
+                      </div>
+                      <div>
+                        <span>경기도 양평군 지평면 절운1길 10-23</span>
+                      </div>
+                      <div class="rows">
+                        <div class="row">
+                          <div class="label">감정가</div>
+                          <div class="value">372,232,000 원</div>
+                        </div>
+                        <div class="row">
+                          <div class="label">최저매각가</div>
+                          <div class="value"><span>(51%)</span><span>182,393,000 원</span></div>
+                        </div>
+                        <div class="row">
+                          <div class="label">매각기일</div>
+                          <div class="value"><time>2025.05.01</time><span>D-17</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <img src="https://media.istockphoto.com/id/154894446/ko/%EC%82%AC%EC%A7%84/%EB%A9%94%EB%8F%84-%EB%B0%8F-%EC%8A%A4%EC%B9%B4%EC%9D%B4.jpg?s=612x612&w=0&k=20&c=TWnhoR4DTF2mFxjpIg8GplL7na0tnMeV0XDBGBfZ_ng=" width="112" height="111" />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="left">
+                      <div class="tag-info">
+                        <div class="bedge">#유찰2회</div>
+                        <div class="bedge">#농지취즉자격증명</div>
+                      </div>
+                      <div>
+                        <div>별5개</div>
+                        <p>관심물건 메모...</p>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <button type="button">하트</button>
+                      <button type="button">벨</button>
+                    </div>
+                  </div>
+                </div> <!-- / recent-content-lists-->
+              </div> <!-- / right-side -->
+            </div>
+            <div class="bottom-side">
+              <ul>
+                <li>경매 종합검색</li>
+                <li>공매 종합검색</li>
+                <li>지도검색</li>
+              </ul>
+              <button type="button" class="clear-button">
+                <span>닫기</span>
+              </button>
+            </div>
 					</div>
 				</div>
 

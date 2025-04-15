@@ -47,7 +47,10 @@ body {
   font-weight: 500;
   font-feature-settings: "liga" off, "clig" off;
   font-size: 14px;
-  line-height: 18px; /* 138.462% */
+  line-height: 18px;
   background-color: var(--bg-color-01);
   color: var(--text-color);
+  /* 숫자 폰트를 고정폭으로 맞출 때 사용 */
+  /* font-feature-settings: 'tnum'; */
+  /* font-variant-numeric: tabular-nums; */
 }
