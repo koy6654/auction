@@ -49,6 +49,8 @@
   --text-color-23: #333;
   --text-color-24: #888;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
+  --scrollbar-thumb-color-02: #ccc;
+  --scrollbar-bg-color-02: #f4f6f8;
   --icon-favorite: url("/images/icon-lnb-favorite-light.svg");
   --icon-recent: url("/images/icon-lnb-recent-light.svg");
   --icon-arrow: url("/images/icon-lnb-top-arrow-light.svg");
@@ -102,6 +104,8 @@
   --text-color-23: #d4d4d4;
   --text-color-24: #AFAFAF;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
+  --scrollbar-thumb-color-02: #ccc;
+  --scrollbar-bg-color-02: #313131;
   --icon-favorite: url("/images/icon-lnb-favorite-dark.svg");
   --icon-recent: url("/images/icon-lnb-recent-dark.svg");
   --icon-arrow: url("/images/icon-lnb-top-arrow-dark.svg");
@@ -147,10 +151,10 @@
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
-  background: #ccc; /* 회색 스크롤바 핸들 */
+  background-color: var(--scrollbar-thumb-color-02);
   border-radius: 10px;
 }
 
 .custom-scroll::-webkit-scrollbar-track {
-  background: #f4f6f8; /* 트랙 배경 */
+  background-color: var(--scrollbar-bg-color-02);
 }
