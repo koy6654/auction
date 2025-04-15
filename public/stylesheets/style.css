@@ -11,4 +11,5 @@ main {
   min-height: 880px;
   color: var(--text-color-02);
   background-color: var(--bg-color-01);
+  /* filter: grayscale(0.5) blur(1px); */
 }

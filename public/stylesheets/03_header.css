@@ -259,7 +259,7 @@ header.header-normal
   align-items: flex-start;
   position: absolute;
   top: calc(100% + 12px);
-  left: 0;
+  left: 5px;
   display: none;
   width: 95px;
   padding: 10px;
@@ -270,7 +270,7 @@ header.header-normal
 }
 
 .list-dropdown-popup#categoryPopup, .list-dropdown-popup#min-categoryPopup{
-  left: -20px;
+  left: -12px;
   top: calc(100% + 19px);
 }
 
@@ -441,7 +441,7 @@ header.header-min .container .menu-area .left-menu{
 
 header.header-min .container .menu-area .left-menu menu {
   display: flex;
-  gap: 35px;
+  gap: 47px;
 }
 
 header.header-min .container .menu-area .left-menu menu li {
@@ -449,14 +449,14 @@ header.header-min .container .menu-area .left-menu menu li {
 }
 
 header.header-min .container .multi-search {
-  width: 296px;
+  width: 240px;
   top: 0;
-  left: -330px;
+  left: -275px;
 }
 
 header.header-min .container .multi-search .left-side .search-box{
   display: flex;
-  width: 61%;
+  width: 45%;
 }
 
 header.header-min .container .menu-area {
@@ -475,7 +475,7 @@ header.header-min .container .menu-area .right-menu .avatar {
   display: flex;
 }
 
-.main-menu-popup{
+.main-menu-popup, .main-menu-popup.min{
   display: none;
   position: absolute;
   z-index: var(--z-index-main-menu-popup);
@@ -541,6 +541,9 @@ header.header-min .container .menu-area .right-menu .avatar {
   margin-left: 0px;
   width: 107px;
 }
+.main-menu-popup.min .top-side ul.auction{
+  margin-left: -7px;
+}
 
 .main-menu-popup .top-side ul.auction li .has-icon::after{
   right: -6px;
@@ -550,22 +553,42 @@ header.header-min .container .menu-area .right-menu .avatar {
   margin-left: 0px;
 }
 
+.main-menu-popup.min .top-side ul.public-auction{
+  margin-left: -5px;
+}
+
 .main-menu-popup .top-side ul.map{}
 
 .main-menu-popup .top-side ul.edu-data{
   margin-left: 20px;
 }
 
+.main-menu-popup.min .top-side ul.edu-data{
+  margin-left: 5px;
+}
+
 .main-menu-popup .top-side ul.statistics{
   margin-left: 42px;
+}
+
+.main-menu-popup.min .top-side ul.statistics{
+  margin-left: 30px;
 }
 
 .main-menu-popup .top-side ul.favorite{
   margin-left: 0px;
 }
 
+.main-menu-popup.min .top-side ul.favorite{
+  margin-left: -7px;
+}
+
 .main-menu-popup .top-side ul.mypage{
   margin-left: 21px;
+}
+
+.main-menu-popup.min .top-side ul.mypage{
+  margin-left: 16px;
 }
 
 .main-menu-popup .top-side ul.mypage li{
@@ -627,39 +650,33 @@ header.header-min .container .menu-area .right-menu .avatar {
   color: var(--text-color-20);
   font-weight: 600;
 }
-
-.backdrop{
+/* searhch-popup */
+header .backdrop{
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-index-backdrop);
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.21);
+  background: var(--bg-color-07);
 }
 
-.search-popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
+header .search-popup {
+  position: absolute;
+  display: flex;
   top:0;
   left:0;
   z-index: var(--z-index-main-search-popup);
 }
 
-.search-popup .bg {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.21);
-}
-
-.search-popup .content{
+header .search-popup .container{
   display: flex;
   position: absolute;
-  top: 2px;
-  left: calc(25% - -58px);
+  top: -22px;
+  left: 150px;
   width: 902px;
   height: 866px;
   border-radius: 16px;
-  background: #FFF;
+  background: var(--bg-color-01);
 }
