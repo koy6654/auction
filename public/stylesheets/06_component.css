@@ -123,6 +123,55 @@ button.button.basic-9 {
   cursor: pointer;
 }
 
+.tag-blue {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #C8E0F3;
+  color: #2D5F9D;
+  padding: 2px 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+  width: fit-content;
+}
+
+.tag-green {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #DAE7BF;
+  color: #477016;
+  padding: 2px 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  word-wrap: break-word;
+  width: fit-content;
+}
+
+.tag-white {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  color: #6A707B;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  word-wrap: break-word;
+  width: fit-content;
+}
+
 .radio-label {
   display: inline-flex;
   align-items: center;
