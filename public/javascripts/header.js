@@ -19,33 +19,41 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // dropdown features
-  function setupPopup(toggleId, popupId) {
+  function setupMultiPopup(toggleId, popupIds = []) {
     const toggleBtn = document.getElementById(toggleId);
-    const popup = document.getElementById(popupId);
+    const popups = popupIds.map((id) => document.getElementById(id));
 
     toggleBtn.addEventListener("click", () => {
-      popup.style.display = popup.style.display === "flex" ? "none" : "flex";
+      const isVisible = popups[0].style.display === "flex";
+      popups.forEach((popup) => {
+        popup.style.display = isVisible ? "none" : "flex";
+      });
     });
 
     document.addEventListener("click", (e) => {
-      if (!toggleBtn.contains(e.target) && !popup.contains(e.target)) {
-        popup.style.display = "none";
+      const clickedOutside =
+        !toggleBtn.contains(e.target) &&
+        !popups.some((popup) => popup.contains(e.target));
+      if (clickedOutside) {
+        popups.forEach((popup) => {
+          popup.style.display = "none";
+        });
       }
     });
   }
 
-  setupPopup("benefitsToggleBtn", "benefitsPopup");
-  setupPopup("loggedInToggleBtn", "loggedInPopup");
-  setupPopup("categoryToggleBtn", "categoryPopup");
-  setupPopup("min-categoryToggleBtn", "min-categoryPopup");
-  setupPopup("applyForTrialToggleBtn", "applyForTrialPopup");
+  setupMultiPopup("benefitsToggleBtn", ["benefitsPopup"]);
+  setupMultiPopup("loggedInToggleBtn", ["loggedInPopup"]);
+  setupMultiPopup("categoryToggleBtn", ["categoryPopup"]);
+  setupMultiPopup("min-categoryToggleBtn", ["min-categoryPopup"]);
+  setupMultiPopup("applyForTrialToggleBtn", ["applyForTrialPopup"]);
 
   // main-menu-popup features
   const menuItems = document.querySelectorAll(".menu-area-item");
   const mainMenuPopup = document.querySelector(".main-menu-popup");
   const mainMenuPopupMin = document.querySelector(".main-menu-popup.min");
   const menuArea = document.querySelector(".menu-area");
-  const delayMs = 100;
+  const delayMs = 200;
   let timeout;
 
   menuItems.forEach((item) => {
@@ -79,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mainMenuPopupMin.style.display = "none";
   });
 
-  const closeButton = mainMenuPopup.querySelector(".support button");
+  const closeButton = mainMenuPopup.querySelector(".support .close");
   if (closeButton) {
     closeButton.addEventListener("click", () => {
       mainMenuPopup.style.display = "none";
@@ -92,4 +100,20 @@ document.addEventListener("DOMContentLoaded", function () {
       mainMenuPopupMin.style.display = "none";
     });
   }
+
+  // search-popup handle
+  setupMultiPopup("headerNormalSearchInput", [
+    "headerNormalBackdrop",
+    "headerNormalSearchPopup",
+  ]);
+
+  document
+    .querySelectorAll("#headerNormalBackdrop, #headerNormalSearchPopupCloseBtn")
+    .forEach((el) => {
+      el.addEventListener("click", () => {
+        document.querySelector("#headerNormalBackdrop").style.display = "none";
+        document.querySelector("#headerNormalSearchPopup").style.display =
+          "none";
+      });
+    });
 });

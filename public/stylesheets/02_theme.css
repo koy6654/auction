@@ -16,6 +16,8 @@
   --bg-color-05: #fff;
   --bg-color-06: #f8f8f8;
   --bg-color-07: rgba(0, 0, 0, 0.21);
+  --bg-color-08: #F2F3F5;
+  --bg-color-09: #F2F3F5;
   --border-color-01: #dee0e5;
   --border-color-02: #d5d5d5;
   --border-color-03: #eaeaea;
@@ -24,6 +26,7 @@
   --border-color-06: #616161;
   --border-color-07: #c7c7c7;
   --border-color-08: #ececec;
+  --border-color-09: #e2e2e2;
   --text-color-01: #000;
   --text-color-02: #595959;
   --text-color-03: #595959;
@@ -48,6 +51,11 @@
   --text-color-22: #595959;
   --text-color-23: #333;
   --text-color-24: #888;
+  --text-color-25: #6a707b;
+  --text-color-26: #2f333b;
+  --text-color-27: #7A818F;
+  --text-color-28: #4E5968;
+  --text-color-29: #6A707B;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #f4f6f8;
@@ -60,7 +68,14 @@
   --icon-angle-down-green: url("/images/icon-arrow-green.svg");
   --icon-arrow-right: url("/images/icon-arrow-right-light.svg");
   --icon-x: url("/images/icon-x-light.svg");
+  --icon-star-fill: url("/images/icon-star-fill-light.svg");
+  --icon-star: url("/images/icon-star-light.svg");
+  --icon-heart: url("/images/icon-heart-light.svg");
+  --icon-alarm: url("/images/icon-alarm-light.svg");
+  --icon-search: url("/images/icon-search-light.svg");
   --hover-color-01: #0091da;
+  --hover-icon-heart: url("/images/icon-heart-dark.svg");
+  --hover-icon-alarm: url("/images/icon-alarm-dark.svg");
 }
 
 .dark-theme {
@@ -71,6 +86,8 @@
   --bg-color-05: #101013;
   --bg-color-06: #2E3851;
   --bg-color-07: rgba(0, 0, 0, 0.72);
+  --bg-color-08: #404040;
+  --bg-color-09: #373737;
   --border-color-01: #51515f;
   --border-color-02: #4b4b4b;
   --border-color-03: #313131;
@@ -79,6 +96,7 @@
   --border-color-06: #808080;
   --border-color-07: #34343E;
   --border-color-08: #707070;
+  --border-color-09: #354157;
   --text-color-01: #fff;
   --text-color-02: #bbb;
   --text-color-03: #7e7e7e;
@@ -103,6 +121,11 @@
   --text-color-22: #b0b0b0;
   --text-color-23: #d4d4d4;
   --text-color-24: #AFAFAF;
+  --text-color-25: #d1d1d1;
+  --text-color-26: #A5CE4F;
+  --text-color-27: #bbb;
+  --text-color-28: #fff;
+  --text-color-29: #ececec;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #313131;
@@ -115,6 +138,13 @@
   --icon-angle-down-green: url("/images/icon-lnb-top-arrow-dark.svg");
   --icon-arrow-right: url("/images/icon-arrow-right-dark.svg");
   --icon-x: url("/images/icon-x-dark.svg");
+  --icon-star-fill: url("/images/icon-star-fill-dark.svg");
+  --icon-star: url("/images/icon-star-dark.svg");
+  --icon-heart: url("/images/icon-heart-dark.svg");
+  --icon-alarm: url("/images/icon-alarm-dark.svg");
+  --icon-search: url("/images/icon-search-dark.svg");
+  --hover-icon-heart: url("/images/icon-heart-light.svg");
+  --hover-icon-alarm: url("/images/icon-alarm-light.svg");
   --hover-color-01: #0091da;
 }
 
