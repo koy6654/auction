@@ -1,6 +1,8 @@
 footer {
+  position: relative;
   height: 337px;
   background-color: var(--bg-color-01);
+  z-index: var(--z-index-footer);
 }
 
 footer .notice,

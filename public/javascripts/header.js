@@ -19,20 +19,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // dropdown features
-  function setupMultiPopup(toggleId, popupIds = []) {
-    const toggleBtn = document.getElementById(toggleId);
+  function setupMultiPopup(toggleIds = [], popupIds = []) {
+    const toggleButtons = toggleIds.map((id) => document.getElementById(id));
     const popups = popupIds.map((id) => document.getElementById(id));
 
-    toggleBtn.addEventListener("click", () => {
-      const isVisible = popups[0].style.display === "flex";
-      popups.forEach((popup) => {
-        popup.style.display = isVisible ? "none" : "flex";
+    toggleButtons.forEach((toggleBtn) => {
+      toggleBtn.addEventListener("click", () => {
+        const isVisible = popups[0].style.display === "flex";
+        popups.forEach((popup) => {
+          popup.style.display = isVisible ? "none" : "flex";
+        });
       });
     });
 
     document.addEventListener("click", (e) => {
       const clickedOutside =
-        !toggleBtn.contains(e.target) &&
+        !toggleButtons.some((btn) => btn.contains(e.target)) &&
         !popups.some((popup) => popup.contains(e.target));
       if (clickedOutside) {
         popups.forEach((popup) => {
@@ -42,11 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  setupMultiPopup("benefitsToggleBtn", ["benefitsPopup"]);
-  setupMultiPopup("loggedInToggleBtn", ["loggedInPopup"]);
-  setupMultiPopup("categoryToggleBtn", ["categoryPopup"]);
-  setupMultiPopup("min-categoryToggleBtn", ["min-categoryPopup"]);
-  setupMultiPopup("applyForTrialToggleBtn", ["applyForTrialPopup"]);
+  setupMultiPopup(["benefitsToggleBtn"], ["benefitsPopup"]);
+  setupMultiPopup(["loggedInToggleBtn"], ["loggedInPopup"]);
+  setupMultiPopup(["categoryToggleBtn"], ["categoryPopup"]);
+  setupMultiPopup(["min-categoryToggleBtn"], ["min-categoryPopup"]);
+  setupMultiPopup(["applyForTrialToggleBtn"], ["applyForTrialPopup"]);
 
   // main-menu-popup features
   const menuItems = document.querySelectorAll(".menu-area-item");
@@ -102,10 +104,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // search-popup handle
-  setupMultiPopup("headerNormalSearchInput", [
-    "headerNormalBackdrop",
-    "headerNormalSearchPopup",
-  ]);
+  setupMultiPopup(
+    ["headerNormalSearchInput", "headerNormalSearchBtn"],
+    ["headerNormalBackdrop", "headerNormalSearchPopup"]
+  );
 
   document
     .querySelectorAll("#headerNormalBackdrop, #headerNormalSearchPopupCloseBtn")
@@ -114,6 +116,20 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector("#headerNormalBackdrop").style.display = "none";
         document.querySelector("#headerNormalSearchPopup").style.display =
           "none";
+      });
+    });
+
+  setupMultiPopup(
+    ["headerMinSearchInput", "headerMinSearchBtn"],
+    ["headerMinBackdrop", "headerMinSearchPopup"]
+  );
+
+  document
+    .querySelectorAll("#headerMinBackdrop, #headerMinSearchPopupCloseBtn")
+    .forEach((el) => {
+      el.addEventListener("click", () => {
+        document.querySelector("#headerMinBackdrop").style.display = "none";
+        document.querySelector("#headerMinSearchPopup").style.display = "none";
       });
     });
 });

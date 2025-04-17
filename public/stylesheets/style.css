@@ -1,5 +1,7 @@
 main {
   display: flex;
+  position: relative;
+  z-index: var(--z-index-main);
   padding: 10px;
   margin-top: 112px;
   flex-direction: column;

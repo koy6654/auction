@@ -11,7 +11,7 @@
         
 				<div class="under-prepare">
 				  <div class="backdrop" id="headerNormalBackdrop"></div>
-					<div class="search-popup" id="headerNormalSearchPopup">
+					<div class="search-popup type-has-search-word" id="headerNormalSearchPopup">
             <div class="top-side">
               <div class="left-side">
                 <div class="recent-search">
@@ -49,7 +49,12 @@
                 </div>
                 
                 <div class="recent-content-lists-container custom-scroll">
-                  <% for (let i = 0; i < 10; i++) {  %>
+                  <% 
+                    // 최근 검색 결과가 많은경우를 대비하여, 스크롤 표시를 볼 수 있도록 처리하였습니다
+                    // 대략 3개 까지는 스크롤이 생기지 않습니다
+                    const resultViewCount = 10;
+                    for (let i = 0; i < resultViewCount; i++) {  
+                  %>
                   <div class="recent-content-lists">
                     <div class="lists">
                       <div class="left">

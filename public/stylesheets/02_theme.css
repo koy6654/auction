@@ -1,11 +1,33 @@
 :root{
-  --z-index-header: 1;
-  --z-index-main-menu-popup: 2;
-  --z-index-list-dropdown-popup: 3;
-  --z-index-backdrop: 4;
-  --z-index-main-search-popup: 5;
-  --z-index-main-search: 6;
-  --z-index-lnb: 7;
+  /* 본문*/
+  --z-index-main: 1;
+
+  /* 본문 보다는 위*/
+  --z-index-main-over: 2;
+
+  /* 푸터 */
+  --z-index-footer: 3;
+
+  /* 헤더 */
+  --z-index-header: 4;
+
+  /* 헤더의 메인 내비게이션 */
+  --z-index-main-menu-popup: 5;
+
+  /* 메뉴 혹은 본문에서 펼쳐지는 드롭다운 */
+  --z-index-list-dropdown-popup: 6;
+
+  /* 본문 가리개 */
+  --z-index-backdrop: 7;
+
+  /* 서치 팝업 */
+  --z-index-main-search-popup: 8;
+
+  /* 서치 팝업 위의 서치 인풋 박스 */
+  --z-index-main-search: 9;
+
+  /* 사이드 메뉴 */
+  --z-index-lnb: 10;
 }
 
 :root {
@@ -56,6 +78,8 @@
   --text-color-27: #7A818F;
   --text-color-28: #4E5968;
   --text-color-29: #6A707B;
+  --text-color-30: #6A707B;
+  --text-color-31: #0091DA;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #f4f6f8;
@@ -126,6 +150,8 @@
   --text-color-27: #bbb;
   --text-color-28: #fff;
   --text-color-29: #ececec;
+  --text-color-30: #f8f8f8;
+  --text-color-31: #FFF;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #313131;
@@ -145,7 +171,7 @@
   --icon-search: url("/images/icon-search-dark.svg");
   --hover-icon-heart: url("/images/icon-heart-light.svg");
   --hover-icon-alarm: url("/images/icon-alarm-light.svg");
-  --hover-color-01: #0091da;
+  --hover-color-01: #a5ce4f;
 }
 
 /* Chrome, Edge, Safari 브라우저 기본*/
