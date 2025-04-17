@@ -103,33 +103,80 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // search-popup handle
+  // search-popup: `type has search word` handle
+  // input
   setupMultiPopup(
-    ["headerNormalSearchInput", "headerNormalSearchBtn"],
-    ["headerNormalBackdrop", "headerNormalSearchPopup"]
+    ["typeHasSearchWordInput"],
+    ["typeHasSearchWordBackdrop", "typeHasSearchWordPopup"]
   );
 
   document
-    .querySelectorAll("#headerNormalBackdrop, #headerNormalSearchPopupCloseBtn")
+    .querySelectorAll(
+      "#typeHasSearchWordBackdrop, #typeHasSearchWordPopupCloseBtn"
+    )
     .forEach((el) => {
       el.addEventListener("click", () => {
-        document.querySelector("#headerNormalBackdrop").style.display = "none";
-        document.querySelector("#headerNormalSearchPopup").style.display =
+        document.querySelector("#typeHasSearchWordBackdrop").style.display =
+          "none";
+        document.querySelector("#typeHasSearchWordPopup").style.display =
+          "none";
+      });
+    });
+
+  // search button
+  setupMultiPopup(
+    ["typeHasSearchWordBtn"],
+    ["typeOnlyResultBackdrop", "typeOnlyResultSearchPopup"]
+  );
+
+  document
+    .querySelectorAll(
+      "#typeOnlyResultBackdrop, #typeOnlyResultSearchPopupCloseBtn"
+    )
+    .forEach((el) => {
+      el.addEventListener("click", () => {
+        document.querySelector("#typeOnlyResultBackdrop").style.display =
+          "none";
+        document.querySelector("#typeOnlyResultSearchPopup").style.display =
+          "none";
+      });
+    });
+
+  // search-popup: `type has search word` handle
+  // input
+  setupMultiPopup(
+    ["typeHasSearchWordInput2"],
+    ["typeHasSearchWordBackdrop2", "typeHasSearchWordPopup2"]
+  );
+
+  document
+    .querySelectorAll(
+      "#typeHasSearchWordBackdrop2, #typeHasSearchWordPopupCloseBtn2"
+    )
+    .forEach((el) => {
+      el.addEventListener("click", () => {
+        document.querySelector("#typeHasSearchWordBackdrop2").style.display =
+          "none";
+        document.querySelector("#typeHasSearchWordPopup2").style.display =
           "none";
       });
     });
 
   setupMultiPopup(
-    ["headerMinSearchInput", "headerMinSearchBtn"],
-    ["headerMinBackdrop", "headerMinSearchPopup"]
+    ["typeHasSearchWordBtn2"],
+    ["typeOnlyResultBackdrop2", "typeOnlyResultSearchPopup2"]
   );
 
   document
-    .querySelectorAll("#headerMinBackdrop, #headerMinSearchPopupCloseBtn")
+    .querySelectorAll(
+      "#typeOnlyResultBackdrop2, #typeOnlyResultSearchPopupCloseBtn2"
+    )
     .forEach((el) => {
       el.addEventListener("click", () => {
-        document.querySelector("#headerMinBackdrop").style.display = "none";
-        document.querySelector("#headerMinSearchPopup").style.display = "none";
+        document.querySelector("#typeOnlyResultBackdrop2").style.display =
+          "none";
+        document.querySelector("#typeOnlyResultSearchPopup2").style.display =
+          "none";
       });
     });
 });

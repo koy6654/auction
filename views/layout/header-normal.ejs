@@ -10,8 +10,8 @@
         </div>
         
 				<div class="under-prepare">
-				  <div class="backdrop" id="headerNormalBackdrop"></div>
-					<div class="search-popup type-has-search-word" id="headerNormalSearchPopup">
+				  <div class="backdrop" id="typeHasSearchWordBackdrop"></div>
+					<div class="search-popup type-has-search-word" id="typeHasSearchWordPopup">
             <div class="top-side">
               <div class="left-side">
                 <div class="recent-search">
@@ -133,7 +133,111 @@
                 <li><button type="button" class="clear-button"><i class='icon icon-search'></i>공매 종합검색</button></li>
                 <li><button type="button" class="clear-button"><i class='icon icon-search'></i>지도검색</button></li>
               </ul>
-              <button type="button" class="clear-button" id="headerNormalSearchPopupCloseBtn">
+              <button type="button" class="clear-button" id="typeHasSearchWordPopupCloseBtn">
+                <span>닫기</span>
+              </button>
+            </div>
+					</div>
+				</div>
+
+        <div class="under-prepare">
+				  <div class="backdrop" id="typeOnlyResultBackdrop"></div>
+					<div class="search-popup type-only-result" id="typeOnlyResultSearchPopup">
+            <div class="top-side">
+              <div class="right-side">
+                <div class="recent-content-counts">
+
+                  <%
+                    // 최근 검색 결과가 많은경우를 대비하여, 스크롤 표시를 볼 수 있도록 처리하였습니다
+                    // 대략 3개 까지는 스크롤이 생기지 않습니다
+                    const resultMinViewCount = 7;
+                  %>
+                  <p class="result-count-txt">총 <span class="count"><%= resultMinViewCount %></span>개의 검색 결과가 있습니다.</p>
+                </div>
+                
+                <div class="recent-content-lists-container custom-scroll">
+                  <% 
+                    for (let i = 0; i < resultMinViewCount; i++) {  
+                  %>
+                  <div class="recent-content-lists">
+                    <div class="lists">
+                      <div class="left">
+                        <div class="item-info">
+                          <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
+                          <div class="bedges">
+                            <div class="bedge blue">위험물저장 및 처리시설</div>
+                            <div class="bedge green">진행중</div>
+                          </div>
+                        </div>
+                        <div class="address">
+                          <span>경기도 양평군 지평면 절운1길 10-23</span>
+                        </div>
+                        <div class="rows">
+                          <div class="row">
+                            <div class="label">감정가</div>
+                            <div class="value top">
+                              <span>372,232,000</span> 원
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="label">최저매각가</div>
+                            <div class="value middle">
+                              <span>(51%)</span>
+                              <span>182,393,000</span> 원
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="label">매각기일</div>
+                            <div class="value bottom">
+                              <time class="date">2025.05.01</time>
+                              <span class="d-day">D-17</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="mask">
+                          <img src="/images/search-popup-building-img.png" width="112" height="111" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <div class="left">
+                        <div class="bedges">
+                          <div class="bedge">#유찰2회</div>
+                          <div class="bedge">#농지취즉자격증명</div>
+                        </div>
+                        <div class="rating-memo">
+                          <div class="rating">
+                            <i class="icon icon-star-fill"></i>
+                            <i class="icon icon-star-fill"></i>
+                            <i class="icon icon-star-fill"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <p class="memo">관심물건 메모...</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <button type="button" class="clear-button icon icon-heart"></button>
+                        <button type="button" class="clear-button icon icon-alarm"></button>
+                        <button type="button" class="clear-button icon icon-heart active"></button>
+                        <button type="button" class="clear-button icon icon-alarm active"></button>
+                      </div>
+                    </div>
+                  </div> <!-- / recent-content-lists-->
+                  <% } %>
+                </div>
+
+              </div> <!-- / right-side -->
+            </div>
+            <div class="bottom-side">
+              <ul>
+                <li><button type="button" class="clear-button"><i class='icon icon-search'></i>경매 종합검색</button></li>
+                <li><button type="button" class="clear-button"><i class='icon icon-search'></i>공매 종합검색</button></li>
+                <li><button type="button" class="clear-button"><i class='icon icon-search'></i>지도검색</button></li>
+              </ul>
+              <button type="button" class="clear-button" id="typeOnlyResultSearchPopupCloseBtn">
                 <span>닫기</span>
               </button>
             </div>
@@ -162,11 +266,11 @@
             </div>
             <div class="vertical-line"></div>
             <div class="search-box">
-              <input type="text" id="headerNormalSearchInput" placeholder="주소 또는 사건번호 검색" />
+              <input type="text" id="typeHasSearchWordInput" placeholder="주소 또는 사건번호 검색" />
             </div>
           </div>
           <div class="right-side">
-            <button type="button" class="clear-button" id="headerNormalSearchBtn">
+            <button type="button" class="clear-button" id="typeHasSearchWordBtn">
               <img src="/images/icon-search.svg" alt="search-icon" />
             </button>
           </div>

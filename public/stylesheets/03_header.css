@@ -670,6 +670,8 @@ header .under-prepare .search-popup {
   align-items: flex-start;
   justify-content: space-between;
   position: absolute;
+  top: -22px;
+  left: 150px;
   width: 902px;
   height: 866px;
   border-radius: 16px;
@@ -680,17 +682,20 @@ header .under-prepare .search-popup {
   line-height: 27.3px;
 }
 
-header .under-prepare .search-popup.type-has-search-word {
-  top: -22px;
-  left: 150px;
-}
-
 header .under-prepare .search-popup .top-side {
   padding: 70px 25px 0px 10px;
   padding-right: 17px; /* 피그마상의 간격이 매우 어색하여 override */
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  width: 100%;
+}
+
+header .under-prepare .search-popup.type-only-result .top-side {
+  /* padding: 70px 17px 0px 17px; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -765,8 +770,22 @@ header .under-prepare .search-popup .top-side .right-side {
   width: 550px;
 }
 
+header .under-prepare .search-popup.type-only-result .top-side .right-side {
+  width: 100%;
+}
+
 header .under-prepare .search-popup .top-side .right-side .recent-content-counts{
   padding-bottom: 14px;
+}
+
+header .under-prepare .search-popup.type-only-result .top-side .right-side .recent-content-counts .result-count-txt {
+  color: var(--text-color-30);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+header .under-prepare .search-popup.type-only-result .top-side .right-side .recent-content-counts .result-count-txt .count{
+  color: var(--text-color-31);
 }
 
 header .under-prepare .search-popup .top-side .right-side .recent-content-counts ul {
@@ -1032,29 +1051,9 @@ header .under-prepare .search-popup .bottom-side li:hover {
   text-decoration-color: var(--text-color-21);
 }
 
-header .under-prepare .search-popup.type-only-result {
+
+
+header.header-min .under-prepare .search-popup {
   top: -3px;
-  right: 44px;
-}
-
-header .under-prepare .search-popup.type-only-result .top-side {
-  padding: 70px 17px 0px 17px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-header .under-prepare .search-popup.type-only-result .top-side .right-side {
-  width: 100%;
-}
-
-header .under-prepare .search-popup.type-only-result .top-side .right-side .recent-content-counts .result-count-txt {
-  color: var(--text-color-30);
-  font-size: 15px;
-  font-weight: 600;
-}
-
-header .under-prepare .search-popup.type-only-result .top-side .right-side .recent-content-counts .result-count-txt .count{
-  color: var(--text-color-31);
+  left: -902px;
 }

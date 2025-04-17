@@ -81,8 +81,139 @@
       <div class="right-menu">
 
         <div class="under-prepare">
-				  <div class="backdrop" id="headerMinBackdrop"></div>
-					<div class="search-popup type-only-result" id="headerMinSearchPopup">
+				  <div class="backdrop" id="typeHasSearchWordBackdrop2"></div>
+					<div class="search-popup type-has-search-word" id="typeHasSearchWordPopup2">
+            <div class="top-side">
+              <div class="left-side">
+                <div class="recent-search">
+                  <div class="recent-search-info">
+                    <h4 class="title">최근 검색어</h4>
+                    <button type="button" class="clear-button delete">전체삭제</button>
+                  </div>
+                  <div class="recent-search-word-container custom-scroll">
+                  <% 
+                    // 최근 검색어가 많은경우를 대비하여, 스크롤 표시를 볼 수 있도록 처리하였습니다
+                    // 대략 24개 까지는 스크롤이 생기지 않습니다
+                    const now = new Date();
+                    const currentMonth = String(now.getMonth() + 1).padStart(2, '0');
+
+                    for (let i = 0; i < 31; i++) { 
+                      const day = String(i + 1).padStart(2, '0'); 
+                  %>
+                    <div class="recent-search-word-lists">
+                      <p class="title">서울중앙</p>
+                      <div class="delete">
+                        <time><%= currentMonth %>.<%= day %></time>
+                        <button type="button" class="clear-button"></button>
+                      </div>
+                    </div>
+                    <% } %>
+                  </div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="recent-content-counts">
+                  <ul>
+                    <li><button type='button' class="blue">최근 검색 2</button></li>
+                    <li><button type='button' class="gray">최근 열람 20</button></li>
+                  </ul>
+                </div>
+                
+                <div class="recent-content-lists-container custom-scroll">
+                  <% 
+                    // 최근 검색 결과가 많은경우를 대비하여, 스크롤 표시를 볼 수 있도록 처리하였습니다
+                    // 대략 3개 까지는 스크롤이 생기지 않습니다
+                    const resultViewCount = 10;
+                    for (let i = 0; i < resultViewCount; i++) {  
+                  %>
+                  <div class="recent-content-lists">
+                    <div class="lists">
+                      <div class="left">
+                        <div class="item-info">
+                          <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
+                          <div class="bedges">
+                            <div class="bedge blue">위험물저장 및 처리시설</div>
+                            <div class="bedge green">진행중</div>
+                          </div>
+                        </div>
+                        <div class="address">
+                          <span>경기도 양평군 지평면 절운1길 10-23</span>
+                        </div>
+                        <div class="rows">
+                          <div class="row">
+                            <div class="label">감정가</div>
+                            <div class="value top">
+                              <span>372,232,000</span> 원
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="label">최저매각가</div>
+                            <div class="value middle">
+                              <span>(51%)</span>
+                              <span>182,393,000</span> 원
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="label">매각기일</div>
+                            <div class="value bottom">
+                              <time class="date">2025.05.01</time>
+                              <span class="d-day">D-17</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="mask">
+                          <img src="/images/search-popup-building-img.png" width="112" height="111" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom">
+                      <div class="left">
+                        <div class="bedges">
+                          <div class="bedge">#유찰2회</div>
+                          <div class="bedge">#농지취즉자격증명</div>
+                        </div>
+                        <div class="rating-memo">
+                          <div class="rating">
+                            <i class="icon icon-star-fill"></i>
+                            <i class="icon icon-star-fill"></i>
+                            <i class="icon icon-star-fill"></i>
+                            <i class="icon icon-star"></i>
+                            <i class="icon icon-star"></i>
+                          </div>
+                          <p class="memo">관심물건 메모...</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <button type="button" class="clear-button icon icon-heart"></button>
+                        <button type="button" class="clear-button icon icon-alarm"></button>
+                        <button type="button" class="clear-button icon icon-heart active"></button>
+                        <button type="button" class="clear-button icon icon-alarm active"></button>
+                      </div>
+                    </div>
+                  </div> <!-- / recent-content-lists-->
+                  <% } %>
+                </div>
+
+              </div> <!-- / right-side -->
+            </div>
+            <div class="bottom-side">
+              <ul>
+                <li><button type="button" class="clear-button"><i class='icon icon-search'></i>경매 종합검색</button></li>
+                <li><button type="button" class="clear-button"><i class='icon icon-search'></i>공매 종합검색</button></li>
+                <li><button type="button" class="clear-button"><i class='icon icon-search'></i>지도검색</button></li>
+              </ul>
+              <button type="button" class="clear-button" id="typeHasSearchWordPopupCloseBtn2">
+                <span>닫기</span>
+              </button>
+            </div>
+					</div>
+				</div>
+
+        <div class="under-prepare">
+				  <div class="backdrop" id="typeOnlyResultBackdrop2"></div>
+					<div class="search-popup type-only-result" id="typeOnlyResultSearchPopup2">
             <div class="top-side">
               <div class="right-side">
                 <div class="recent-content-counts">
@@ -177,7 +308,7 @@
                 <li><button type="button" class="clear-button"><i class='icon icon-search'></i>공매 종합검색</button></li>
                 <li><button type="button" class="clear-button"><i class='icon icon-search'></i>지도검색</button></li>
               </ul>
-              <button type="button" class="clear-button" id="headerMinSearchPopupCloseBtn">
+              <button type="button" class="clear-button" id="typeOnlyResultSearchPopupCloseBtn">
                 <span>닫기</span>
               </button>
             </div>
@@ -206,11 +337,11 @@
             </div>
             <div class="vertical-line"></div>
             <div class="search-box">
-              <input type="text" id="headerMinSearchInput" placeholder="사건번호 검색" />
+              <input type="text" id="typeHasSearchWordInput2" placeholder="사건번호 검색" />
             </div>
           </div>
           <div class="right-side">
-            <button type="button" class="clear-button"  id="headerMinSearchBtn">
+            <button type="button" class="clear-button"  id="typeHasSearchWordBtn2">
               <img src="/images/icon-search.svg" alt="search-icon" />
             </button>
           </div>
