@@ -654,14 +654,24 @@ header.header-min .container .menu-area .right-menu .avatar {
 
 /* searhch-popup */
 header .under-prepare .backdrop{
-  display: none;
   position: fixed;
+  inset: 0;
   top: 0;
   left: 0;
   z-index: var(--z-index-backdrop);
   width: 100%;
   height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
   background: var(--bg-color-07);
+}
+
+header .under-prepare .backdrop.show{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 header .under-prepare .search-popup {

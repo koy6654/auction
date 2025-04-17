@@ -1,4 +1,4 @@
-nav.nav-right-side {
+nav.nav-right-side .nav-wrapper {
   position: fixed;
   display: flex;
   width: 65px;
@@ -14,7 +14,87 @@ nav.nav-right-side {
   z-index: var(--z-index-lnb);
 }
 
-nav.nav-right-side .container {
+nav.nav-right-side .under-prepare .backdrop{
+  position: fixed;
+  inset: 0;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-backdrop);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background: var(--bg-color-07);
+}
+
+nav.nav-right-side .under-prepare .backdrop.show{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+nav.nav-right-side .under-prepare .content {
+  display: none;
+}
+
+nav.nav-right-side .under-prepare .sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 390px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%); /* right를 음수 값으로 제어 해도 되긴하는데.. 위치계를 사용하지 말고 `transfrom` 을 사용하여, GPU와 모바일에서 성능을 최적화 한다 */
+  transition: transform 0.3s ease-in-out;
+  z-index: var(--z-index-sidebar);
+  background-color: var(--bg-color-10);
+  overflow: hidden;
+}
+
+nav.nav-right-side .under-prepare .sidebar.open{
+  transform: translateX(0);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px 10px;
+  margin-right: 74px;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .not-logged-in {
+
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .recent-content-lists-container.custom-scroll {
+  flex: 1;
+  overflow-y: auto; /* 여기만 스크롤 허용 */
+  min-height: 0;
+}
+
+/* nav 고정 버튼 */
+nav.nav-right-side .nav-wrapper .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,21 +103,21 @@ nav.nav-right-side .container {
   padding: 21px 10px 10px 10px;
 }
 
-nav.nav-right-side .container .icon {
+nav.nav-right-side .nav-wrapper .container .icon {
   display: block;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-nav.nav-right-side .container .top-side,
-nav.nav-right-side .container .bottom-side {
+nav.nav-right-side .nav-wrapper .container .top-side,
+nav.nav-right-side .nav-wrapper .container .bottom-side {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-nav.nav-right-side .container button {
+nav.nav-right-side .nav-wrapper .container button {
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -52,17 +132,17 @@ nav.nav-right-side .container button {
   color: #888;
 }
 
-nav.nav-right-side .container .alarm {
+nav.nav-right-side .nav-wrapper .container .alarm {
   position: relative;
 }
 
-nav.nav-right-side .container .alarm .icon {
+nav.nav-right-side .nav-wrapper .container .alarm .icon {
   width: 21px;
   height: 21px;
   margin-bottom: 6px;
 }
 
-nav.nav-right-side .container .alarm .bedge {
+nav.nav-right-side .nav-wrapper .container .alarm .bedge {
   position: absolute;
   display: flex;
   width: 28px;
@@ -83,7 +163,7 @@ nav.nav-right-side .container .alarm .bedge {
   letter-spacing: -0.44px;
 }
 
-nav.nav-right-side .container .favorite .icon {
+nav.nav-right-side .nav-wrapper .container .favorite .icon {
   width: 42px;
   height: 36px;
   aspect-ratio: 7/6;
@@ -91,23 +171,23 @@ nav.nav-right-side .container .favorite .icon {
   background-image: var(--icon-favorite);
 }
 
-nav.nav-right-side .container .favorite p {
+nav.nav-right-side .nav-wrapper .container .favorite p {
   color: var(--text-color-10);
 }
 
-nav.nav-right-side .container .recent .icon {
+nav.nav-right-side .nav-wrapper .container .recent .icon {
   width: 31px;
   height: 30px;
   background-image: var(--icon-recent);
 }
 
-nav.nav-right-side .container .top .icon {
+nav.nav-right-side .nav-wrapper .container .top .icon {
   width: 18px;
   height: 18px;
   background-image: var(--icon-arrow);
 }
 
-nav.nav-right-side .container .top p {
+nav.nav-right-side .nav-wrapper .container .top p {
   color: var(--text-color-11);
   font-size: 12px;
   font-style: normal;
@@ -115,7 +195,7 @@ nav.nav-right-side .container .top p {
   line-height: normal;
 }
 
-nav.nav-right-side .container .theme .icon {
+nav.nav-right-side .nav-wrapper .container .theme .icon {
   width: 38px;
   height: 40px;
   background-image: var(--icon-theme);

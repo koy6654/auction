@@ -1,8 +1,8 @@
 :root{
-  /* 본문*/
+  /* 본문 */
   --z-index-main: 1;
 
-  /* 본문 보다는 위*/
+  /* 본문 > 보다는 위*/
   --z-index-main-over: 2;
 
   /* 푸터 */
@@ -11,23 +11,27 @@
   /* 헤더 */
   --z-index-header: 4;
 
-  /* 헤더의 메인 내비게이션 */
+  /* 헤더 > 메인 내비게이션 팝업 */
   --z-index-main-menu-popup: 5;
 
-  /* 메뉴 혹은 본문에서 펼쳐지는 드롭다운 */
+  /* 헤더 메뉴 > 드롭다운 */
+  /* 본문 > 드롭다운 */
   --z-index-list-dropdown-popup: 6;
 
-  /* 본문 가리개 */
+  /* 본문 > 가리개 */
   --z-index-backdrop: 7;
 
-  /* 서치 팝업 */
+  /* 헤더 > 서치 팝업 */
   --z-index-main-search-popup: 8;
 
-  /* 서치 팝업 위의 서치 인풋 박스 */
+  /* 헤더 > 서치 팝업 위의 서치 인풋 박스 */
   --z-index-main-search: 9;
 
+  /* 사이드 메뉴 > 바 */
+  --z-index-sidebar: 10;
+
   /* 사이드 메뉴 */
-  --z-index-lnb: 10;
+  --z-index-lnb: 11;
 }
 
 :root {
@@ -40,6 +44,7 @@
   --bg-color-07: rgba(0, 0, 0, 0.21);
   --bg-color-08: #F2F3F5;
   --bg-color-09: #F2F3F5;
+  --bg-color-10: #fff;
   --border-color-01: #dee0e5;
   --border-color-02: #d5d5d5;
   --border-color-03: #eaeaea;
@@ -112,6 +117,7 @@
   --bg-color-07: rgba(0, 0, 0, 0.72);
   --bg-color-08: #404040;
   --bg-color-09: #373737;
+  --bg-color-10: #101013;
   --border-color-01: #51515f;
   --border-color-02: #4b4b4b;
   --border-color-03: #313131;

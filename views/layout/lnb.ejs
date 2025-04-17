@@ -1,27 +1,295 @@
 <nav class="nav-right-side">
-  <div class="container">
-    <div class="top-side">
-      <button type="button" class="alarm">
-        <img class='icon icon-alarm' src="/images/icon-lnb-alarm.svg" />
-        <p>알림</p>
-        <div class="bedge">99+</div>
-      </button>
-      <button type="button" class="favorite">
-        <i class="icon icon-favorite"></i>
-        <p>관심</p>
-      </button>
-      <button type="button" class="recent">
-        <i class="icon icon-recent"></i>
-        <p>최근 본</p>
-      </button>
-    </div>
-    <div class="bottom-side">
-      <button type="button" class="top">
-        <i class="icon icon-top"></i>
-        <p>TOP</p>
-      </button>
-      <button id="theme-toggle" type="button" class="theme">
-        <i class="icon icon-theme"></i>
-      </button>
+
+  <div class="under-prepare">
+    <div class="backdrop" id="lnbBackdrop"></div>
+
+    <nav class="sidebar" id="sidebar">
+      <div class="container">
+        <div class="not-logged-in">
+          <h5>로그인 후 이용하실 수 있어요.</h5>
+          <h5>회원이 아니라면 지금 가입하세요!</h5>
+          <p>
+            <a href='#'>로그인 ></a><a href='#'>회원가입 ></a>
+          </p>
+        </div>
+        <div class="logged-in">
+          
+          <section class="content" id="lnbSidebarAlaram">
+            <div class="top-side">
+              <h5 class="title">알림</h5>
+              <p>모두 읽음처리</p>
+            </div>
+            <div class="button-lists">
+              <ul>
+                <li>전체 4</li>
+                <li>문서접수 2</li>
+                <li>종국결과 2</li>
+              </ul>
+            </div>
+            <div class="content-counts">
+              <p><span>4</span>개</p>
+            </div>
+            <div class="alarm-content-lists-container custom-scroll">
+              <div class="recent-content-lists">
+                <div class="lists">
+                  <div class="item-info">
+                    <div class="bedge blue">문건접수</div>
+                    <p>서울중앙 2024타경000000[1]</p>
+                  </div>
+                  <div class="item-info">
+                    <p>채권자 농OOOOOOOOOOO 유치권권리배제신청서 제출</p>
+                  </div>
+                  <div class="item-info">
+                    <time>2025.05.01</time>
+                    <div class="">New</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p>더보기</p>
+              </div>
+            </div> <!-- / scroll end -->
+          </section>
+          
+          <section class="content" id="lnbSidebarFavorite">
+            <div class="top-side">
+              <h5 class="title">관심물건</h5>
+              <p></p>
+            </div>
+            <div class="button-lists">
+              <ul>
+                <li>전체 4</li>
+                <li>문서접수 2</li>
+                <li>종국결과 2</li>
+              </ul>
+            </div>
+            <div class="group-select-container">
+              <label>그룹</label>
+              <div class="group-select-prepare">
+                <div class="left">
+                  <div>그룹전체</div>
+                  <button>+</button>
+                </div>
+                <div class="right">
+                  편집
+                </div>
+              </div>
+              <div class="group-select-result">
+                <div>결과1</div>
+                <div>결과2</div>
+                <div>결과3</div>
+                <div>초기화</div>
+              </div>
+            </div>
+            <div class="button-lists">
+              <label>상태</label>
+              <ul>
+                <li>전체 4</li>
+                <li>문서접수 2</li>
+                <li>종국결과 2</li>
+              </ul>
+            </div>
+            <div class="button-lists">
+              <label>용도</label>
+              <ul>
+                <li>전체 4</li>
+                <li>문서접수 2</li>
+                <li>종국결과 2</li>
+              </ul>
+            </div>
+            <div class="content-counts">
+              <p><span>4</span>개</p>
+              <div>매각가 높은</div>
+            </div>
+            <div class="recent-content-lists-container custom-scroll">
+              <% 
+                for (let i = 0; i < 6; i++) {  
+              %>
+              <div class="recent-content-lists">
+                <div class="lists">
+                  <div class="left">
+                    <div class="item-info">
+                      <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
+                      <div class="bedges">
+                        <div class="bedge blue">위험물저장 및 처리시설</div>
+                        <div class="bedge green">진행중</div>
+                      </div>
+                    </div>
+                    <div class="address">
+                      <span>경기도 양평군 지평면 절운1길 10-23</span>
+                    </div>
+                    <div class="rows">
+                      <div class="row">
+                        <div class="label">감정가</div>
+                        <div class="value top">
+                          <span>372,232,000</span> 원
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="label">최저매각가</div>
+                        <div class="value middle">
+                          <span>(51%)</span>
+                          <span>182,393,000</span> 원
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="label">매각기일</div>
+                        <div class="value bottom">
+                          <time class="date">2025.05.01</time>
+                          <span class="d-day">D-17</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="mask">
+                      <img src="/images/search-popup-building-img.png" width="112" height="111" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="left">
+                    <div class="bedges">
+                      <div class="bedge">#유찰2회</div>
+                      <div class="bedge">#농지취즉자격증명</div>
+                    </div>
+                    <div class="rating-memo">
+                      <div class="rating">
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                      </div>
+                      <p class="memo">관심물건 메모...</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <button type="button" class="clear-button icon icon-heart"></button>
+                    <button type="button" class="clear-button icon icon-alarm"></button>
+                    <button type="button" class="clear-button icon icon-heart active"></button>
+                    <button type="button" class="clear-button icon icon-alarm active"></button>
+                  </div>
+                </div>
+              </div> <!-- / recent-content-lists-->
+              <% } %>
+            </div>
+          </section>
+          
+          <section class="content" id="lnbSidebarRecent">
+            <div class="top-side">
+              <h5 class="title">최근 본</h5>
+              <p>전체보기 +</p>
+            </div>
+            <div class="content-counts">
+              <p><span>4</span>개</p>
+              <div>매각가 높은</div>
+            </div>
+            <div class="recent-content-lists-container custom-scroll">
+              <% 
+                for (let i = 0; i < 6; i++) {  
+              %>
+              <div class="recent-content-lists">
+                <div class="lists">
+                  <div class="left">
+                    <div class="item-info">
+                      <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
+                      <div class="bedges">
+                        <div class="bedge blue">위험물저장 및 처리시설</div>
+                        <div class="bedge green">진행중</div>
+                      </div>
+                    </div>
+                    <div class="address">
+                      <span>경기도 양평군 지평면 절운1길 10-23</span>
+                    </div>
+                    <div class="rows">
+                      <div class="row">
+                        <div class="label">감정가</div>
+                        <div class="value top">
+                          <span>372,232,000</span> 원
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="label">최저매각가</div>
+                        <div class="value middle">
+                          <span>(51%)</span>
+                          <span>182,393,000</span> 원
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="label">매각기일</div>
+                        <div class="value bottom">
+                          <time class="date">2025.05.01</time>
+                          <span class="d-day">D-17</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="mask">
+                      <img src="/images/search-popup-building-img.png" width="112" height="111" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="left">
+                    <div class="bedges">
+                      <div class="bedge">#유찰2회</div>
+                      <div class="bedge">#농지취즉자격증명</div>
+                    </div>
+                    <div class="rating-memo">
+                      <div class="rating">
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                      </div>
+                      <p class="memo">관심물건 메모...</p>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <button type="button" class="clear-button icon icon-heart"></button>
+                    <button type="button" class="clear-button icon icon-alarm"></button>
+                    <button type="button" class="clear-button icon icon-heart active"></button>
+                    <button type="button" class="clear-button icon icon-alarm active"></button>
+                  </div>
+                </div>
+              </div> <!-- / recent-content-lists-->
+              <% } %>
+            </div>
+          </section>
+        </div>
+      </div>
+    </nav>
   </div>
+
+  <div class="nav-wrapper">
+    <div class="container">
+      <div class="top-side">
+        <button type="button" class="alarm" id="lnbAlarmBtn">
+          <img class='icon icon-alarm' src="/images/icon-lnb-alarm.svg" />
+          <p>알림</p>
+          <div class="bedge">99+</div>
+        </button>
+        <button type="button" class="favorite" id="lnbFavoriteBtn">
+          <i class="icon icon-favorite"></i>
+          <p>관심</p>
+        </button>
+        <button type="button" class="recent" id="lnbRecentBtn">
+          <i class="icon icon-recent"></i>
+          <p>최근 본</p>
+        </button>
+      </div>
+      <div class="bottom-side">
+        <button type="button" class="top">
+          <i class="icon icon-top"></i>
+          <p>TOP</p>
+        </button>
+        <button id="theme-toggle" type="button" class="theme">
+          <i class="icon icon-theme"></i>
+        </button>
+    </div>
+  </div>
+
 </nav>
