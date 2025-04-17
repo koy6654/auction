@@ -493,3 +493,34 @@ button.button.basic-9 {
   display: flex;
   align-items: center;
 }
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid #E2E2E2;
+}
+
+.table th {
+  border: 1px solid #E2E2E2;
+  padding: 8px;
+  text-align: center;
+  color: #090909;
+  font-size: 15px;
+  font-family: Pretendard;
+  font-weight: 600;
+  line-height: 28px;
+  word-wrap: break-word"
+}
+
+.table td {
+  border: 1px solid #E2E2E2;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #F2F2F2;
+  text-align: left;
+}
+
+.table td {
+  background-color: #FFFFFF;
+}
