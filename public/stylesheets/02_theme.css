@@ -87,6 +87,7 @@
   --text-color-31: #0091DA;
   --text-color-32: #454C58;
   --text-color-33: #868686;
+  --text-color-34: #2F333B;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #f4f6f8;
@@ -165,6 +166,7 @@
   --text-color-31: #FFF;
   --text-color-32: #D9DDE2;
   --text-color-33: #B0B0B0;
+  --text-color-34: #FFF;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #313131;

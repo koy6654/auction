@@ -239,6 +239,7 @@ nav.nav-right-side .alarm-content-lists-container .list .list-top {
   align-items: center;
   gap: 10px;
   font-size: 15px;
+  padding-bottom: 4px;
 }
 
 nav.nav-right-side .alarm-content-lists-container .list .list-top .bedge.green {
@@ -257,6 +258,80 @@ nav.nav-right-side .alarm-content-lists-container .list .list-top .txt {
 
 nav.nav-right-side .alarm-content-lists-container .list .list-top .txt .bold {
   font-weight: 700;
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-middle {
+  font-size: 14.5px;
+  line-height: 27.3px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-middle .description {
+  color: var(--text-color-34);
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-middle .description .important {
+  color: var(--text-color-16);
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-middle .title-data {
+  display: flex;
+  gap: 10px;
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-middle .title-data .title {
+  color: var(--text-color-02);
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-middle .title-data .data {
+  font-weight: 600;
+  color: var(--text-color-34);
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-middle .result-txt {
+  color: #0091DA;
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-bottom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-bottom time {
+  color: var(--text-color-28);
+}
+
+nav.nav-right-side .alarm-content-lists-container .list .list-bottom .bedge.new {
+  color: #F53B32;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  border-radius: 12px;
+  border: 1px solid #F53B32;
+  padding: 0px 7px;
+}
+
+nav.nav-right-side .alarm-content-lists-container .more {
+  margin-top: 11px;
+  color: var(--text-color-01);
+  padding: 10px 0;
+}
+
+nav.nav-right-side .alarm-content-lists-container .more button.clear-button {
+  width: 100%;
+  justify-content: center;
+}
+
+nav.nav-right-side .alarm-content-lists-container .more .icon.icon-angle-down {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-image: var(--icon-angle-down);
 }
 
 /* nav 고정 버튼 */
