@@ -222,6 +222,16 @@ nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .top-s
   margin-right: 2px;
 }
 
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists label {
+  display: block;
+  color: var(--text-color-33);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13.3px;
+  margin-bottom: 7px;
+}
+
 nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists ul {
   display: flex;
   flex-wrap: wrap;
@@ -261,6 +271,62 @@ nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .butto
 nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists li button.blue .count{}
 nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists li button.gray .count{
   color: var(--text-color-16);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists li button.gray-angle-down {
+  height: 36px;
+  padding: 0px 11px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13.3px;
+  color: var(--text-color-28);
+  border-radius: 8px;
+  background-color: var(--bg-color-11);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists li button.gray-circle {
+  height: 36px;
+  padding: 0px 11px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13.3px;
+  color: var(--text-color-28);
+  background-color: var(--bg-color-11);
+  border-radius: 50%;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists li button .icon.icon-lnb-plus {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 18px;
+  background-image: var(--icon-lnb-plus);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists li button .icon.icon-angle-down-wide {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-image: var(--icon-angle-down-wide);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .button-lists li button.reset {
+  border-radius: 8px;
+  border: 1px solid #DF5953;
+  color: #DF5953;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13.3px;
+  height: 36px;
+  padding: 0px 11px;
 }
 
 nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts {
@@ -310,6 +376,36 @@ nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .conte
 
 nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .right button .icon.icon-angle-down-wide.flip {
   transform: rotate(180deg);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .group-select-container {}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .group-select-container label{
+  display: block;
+  color: var(--text-color-33);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 13.3px;
+  margin-bottom: 7px;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .group-select-container .group-select-prepare{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.nav-right-side .group-select-prepare .left {
+  display: flex;
+  align-items: center;
+}
+
+nav.nav-right-side .group-select-prepare .right button {
+  color: var(--text-color-28);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 nav.nav-right-side .custom-scroll {

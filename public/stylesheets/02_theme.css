@@ -112,6 +112,7 @@
   --icon-check: url("/images/icon-check-light.svg");
   --icon-pg-double-arrow-left: url("/images/pg-double-arrow-left-light.svg");
   --icon-pg-arrow-left: url("/images/pg-arrow-left-light.svg");
+  --icon-lnb-plus: url("/images/icon-lnb-plus-light.svg");
   --hover-color-01: #0091da;
   --hover-icon-heart: url("/images/icon-heart-dark.svg");
   --hover-icon-alarm: url("/images/icon-alarm-dark.svg");
@@ -197,6 +198,7 @@
   --icon-check: url("/images/icon-check-dark.svg");
   --icon-pg-double-arrow-left: url("/images/pg-double-arrow-left-dark.svg");
   --icon-pg-arrow-left: url("/images/pg-arrow-left-dark.svg");
+  --icon-lnb-plus: url("/images/icon-lnb-plus-dark.svg");
   --hover-icon-heart: url("/images/icon-heart-light.svg");
   --hover-icon-alarm: url("/images/icon-alarm-light.svg");
   --hover-color-01: #a5ce4f;
