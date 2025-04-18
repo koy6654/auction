@@ -45,6 +45,7 @@
   --bg-color-08: #F2F3F5;
   --bg-color-09: #F2F3F5;
   --bg-color-10: #fff;
+  --bg-color-11: #EAECF0;
   --border-color-01: #dee0e5;
   --border-color-02: #d5d5d5;
   --border-color-03: #eaeaea;
@@ -97,6 +98,7 @@
   --icon-theme: url("/images/icon-lnb-theme-light.svg");
   --icon-logo: url("/images/logo-light.png");
   --icon-angle-down: url("/images/icon-angle-down-light.svg");
+  --icon-angle-down-wide: url("/images/icon-angle-down-wide-light.svg");
   --icon-angle-down-green: url("/images/icon-arrow-green.svg");
   --icon-arrow-right: url("/images/icon-arrow-right-light.svg");
   --icon-x: url("/images/icon-x-light.svg");
@@ -124,6 +126,7 @@
   --bg-color-08: #404040;
   --bg-color-09: #373737;
   --bg-color-10: #101013;
+  --bg-color-11: #373737;
   --border-color-01: #51515f;
   --border-color-02: #4b4b4b;
   --border-color-03: #313131;
@@ -176,6 +179,7 @@
   --icon-theme: url("/images/icon-lnb-theme-dark.svg");
   --icon-logo: url("/images/logo-dark.png");
   --icon-angle-down: url("/images/icon-angle-down-dark.svg");
+  --icon-angle-down-wide: url("/images/icon-angle-down-wide-dark.svg");
   --icon-angle-down-green: url("/images/icon-lnb-top-arrow-dark.svg");
   --icon-arrow-right: url("/images/icon-arrow-right-dark.svg");
   --icon-x: url("/images/icon-x-dark.svg");

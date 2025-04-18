@@ -831,6 +831,9 @@ header .under-prepare .search-popup .top-side .right-side .recent-content-lists-
 header .under-prepare .search-popup .top-side .right-side .recent-content-lists {
   padding: 2px;
   margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27.3px;
 }
 
 header .under-prepare .search-popup .top-side .right-side .recent-content-lists + .recent-content-lists {
@@ -843,6 +846,11 @@ header .under-prepare .search-popup .top-side .right-side .recent-content-lists 
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
+}
+
+header .under-prepare .search-popup .top-side .right-side .recent-content-lists .lists .left {
+  display: flex;
+  flex-direction: column;
 }
 
 header .under-prepare .search-popup .top-side .right-side .recent-content-lists .lists .left .item-info,

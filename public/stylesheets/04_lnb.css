@@ -201,18 +201,52 @@ nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .butto
 }
 
 nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 13.3px;
 }
 
-nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .count {
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .left .count {
   color: var(--text-color-16);
 }
 
-nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .txt {
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .left .txt {
   color: var(--text-color-28);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .right {
+  display: flex;
+  gap: 5px;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .right button {
+  height: 36px;
+  padding: 0px 11px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13.3px;
+  color: var(--text-color-28);
+  border-radius: 8px;
+  background-color: var(--bg-color-11);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .right button .icon.icon-angle-down-wide {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  background-image: var(--icon-angle-down-wide);
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content .content-counts .right button .icon.icon-angle-down-wide.flip {
+  transform: rotate(180deg);
 }
 
 nav.nav-right-side .custom-scroll {
@@ -333,6 +367,235 @@ nav.nav-right-side .alarm-content-lists-container .more .icon.icon-angle-down {
   height: 24px;
   background-image: var(--icon-angle-down);
 }
+
+
+
+/* search-pop 과 동일한 루틴 */
+nav.nav-right-side .under-prepare .content .recent-content-lists {
+  margin-bottom: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27.3px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists + .recent-content-lists {
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color-09);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left {
+  display: flex;
+  flex-direction: column;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .item-info,
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .item-info .bedges {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  gap: 10px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .item-info .sequence{
+  color: var(--text-color-02);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .item-info .sequence .bold {
+  font-weight: 700;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .item-info .bedges{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .item-info .bedges .bedge {
+  padding: 0px 8px;
+  border-radius: 7px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .item-info .bedges .bedge.blue{
+  background-color: #C8E0F3;
+  color: #2D5F9D;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .item-info .bedges .bedge.green{
+  background-color: #DAE7BF;
+  color: #477016;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .address {
+  font-size: 14.5px;
+  color: var(--text-color-26);
+  margin-top: -5px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows {}
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: -5px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows .row .label {
+  font-size: 13px;
+  color: var(--text-color-27);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows .row .value {
+  font-size: 14.5px;
+  font-weight: 600;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows .row .value.top{
+  color: var(--text-color-27);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows .row .value.middle{
+  color: var(--text-color-16);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows .row .value.bottom{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows .row .value.bottom .date{
+  color: var(--text-color-28);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .left .rows .row .value.bottom .d-day{
+  color: var(--text-color-16);
+  text-indent: 3px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .right .mask{
+  width: 112px;
+  height: 111px;
+  border-radius: 10px;
+  background-color: var(--bg-color-06);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .lists .right .mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .left .bedges,
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .left .rating-memo {
+  display: flex;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .left .bedges {
+  font-size: 12px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  gap: 10px;
+  color: var(--text-color-29);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .left .bedges .bedge{
+  padding: 0 8px;
+  background-color: var(--bg-color-09);
+  border-radius: 7px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .left .rating-memo .rating{
+  display: flex;
+  align-items: center;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .left .rating-memo .rating .icon{
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: var(--icon-star);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .left .rating-memo .rating .icon.icon-star-fill{
+  background-image: var(--icon-star-fill);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .left .rating-memo .memo{
+  font-size: 13px;
+  color: var(--text-color-27);
+  margin-left: 4px;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .right {
+  display: flex;
+  align-items: center;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .right .icon{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .right .icon.icon-heart{
+  width: 24px;
+  height: 24px;
+  background-image: var(--icon-heart);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .right .icon.icon-heart.active,
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .right .icon.icon-heart:hover{
+  background-image: var(--hover-icon-heart);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .right .icon.icon-alarm{
+  width: 18px;
+  height: 20px;
+  background-image: var(--icon-alarm);
+}
+
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .right .icon.icon-alarm.active,
+nav.nav-right-side .under-prepare .content .recent-content-lists .bottom .right .icon.icon-alarm:hover{
+  background-image: var(--hover-icon-alarm);
+}
+
+header .under-prepare .search-popup .bottom-side {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 28px 10px 17px;
+  border-top: 1px solid var(--border-color-08);
+  color: var(--text-color-21);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27.3px;
+}
+
+
+
+
+
 
 /* nav 고정 버튼 */
 nav.nav-right-side .nav-wrapper .container {
