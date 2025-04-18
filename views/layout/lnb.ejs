@@ -253,7 +253,7 @@
 
             <div class="recent-content-lists-container custom-scroll">
               <% 
-                for (let i = 0; i < 6; i++) {  
+                for (let i = 0; i < 2; i++) {  
               %>
               <div class="recent-content-lists">
                 <div class="lists">
@@ -298,34 +298,120 @@
                   </div>
                 </div>
                 <div class="bottom">
-                  <div class="left">
-                    <div class="bedges">
-                      <div class="bedge">#유찰2회</div>
-                      <div class="bedge">#농지취즉자격증명</div>
-                    </div>
-                    <div class="rating-memo">
-                      <div class="rating">
-                        <i class="icon icon-star-fill"></i>
-                        <i class="icon icon-star-fill"></i>
-                        <i class="icon icon-star-fill"></i>
-                        <i class="icon icon-star"></i>
-                        <i class="icon icon-star"></i>
+                  <div class="twin">
+                    <div class="left">
+                      <div class="bedges">
+                        <div class="bedge blue">다세대</div>
+                        <div class="bedge green">진행중</div>
+                        <div class="bedge">#유찰2회</div>
+                        <div class="bedge">#농지취즉자격증명</div>
                       </div>
-                      <p class="memo">관심물건 메모...</p>
+                    </div>
+                    <div class="right">
+                      <button type="button" class="clear-button icon icon-heart"></button>
+                      <button type="button" class="clear-button icon icon-alarm"></button>
+                      <!-- <button type="button" class="clear-button icon icon-heart active"></button>
+                      <button type="button" class="clear-button icon icon-alarm active"></button> -->
+                    </div>
+                  </div>
+                  <div class="rating-memo">
+                    <div class="rating">
+                      <i class="icon icon-star-fill"></i>
+                      <i class="icon icon-star-fill"></i>
+                      <i class="icon icon-star-fill"></i>
+                      <i class="icon icon-star"></i>
+                      <i class="icon icon-star"></i>
+                    </div>
+                    <p class="memo">관심물건 메모...</p>
+                  </div>
+                </div>
+              </div> <!-- / recent-content-lists-->
+
+              <div class="recent-content-lists">
+                <div class="lists">
+                  <div class="left">
+                    <div class="item-info">
+                      <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
+                      <!-- <div class="bedges">
+                        <div class="bedge blue">위험물저장 및 처리시설</div>
+                        <div class="bedge green">진행중</div>
+                      </div> -->
+                    </div>
+                    <div class="address">
+                      <span>경기도 양평군 지평면 절운1길 10-23</span>
+                    </div>
+                    <div class="rows">
+                      <div class="row">
+                        <div class="label">감정가</div>
+                        <div class="value top">
+                          <span>372,232,000</span> 원
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="label">최저매각가</div>
+                        <div class="value middle">
+                          <span>(51%)</span>
+                          <span>182,393,000</span> 원
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="label">매각기일</div>
+                        <div class="value bottom">
+                          <time class="date">2025.05.01</time>
+                          <span class="d-day">D-17</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="right">
-                    <button type="button" class="clear-button icon icon-heart"></button>
-                    <button type="button" class="clear-button icon icon-alarm"></button>
-                    <button type="button" class="clear-button icon icon-heart active"></button>
-                    <button type="button" class="clear-button icon icon-alarm active"></button>
+                    <div class="mask">
+                      <img src="/images/search-popup-building-img.png" width="112" height="111" />
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="twin">
+                    <div class="left">
+                      <div class="bedges">
+                        <div class="bedge blue">다세대</div>
+                        <div class="bedge green">진행중</div>
+                        <div class="bedge">#유찰2회</div>
+                        <div class="bedge">#농지취즉자격증명</div>
+                        <div class="bedge">#etc...</div>
+                        <div class="bedge">#etc...</div>
+                        <div class="bedge">#etc...</div>
+                      </div>
+                    </div>
+                    <div class="right">
+                      <button type="button" class="clear-button icon icon-heart active"></button>
+                      <button type="button" class="clear-button icon icon-alarm active"></button>
+                    </div>
+                  </div>
+                  <div class="rating-memo">
+                    <div class="rating">
+                      <i class="icon icon-star-fill"></i>
+                      <i class="icon icon-star"></i>
+                      <i class="icon icon-star"></i>
+                      <i class="icon icon-star"></i>
+                      <i class="icon icon-star"></i>
+                    </div>
+                    <p class="memo">관심물건 메모...</p>
                   </div>
                 </div>
               </div> <!-- / recent-content-lists-->
               <% } %>
             </div>
             <div class="pagenation">
-              페이지네이션
+              <ul>
+                <li><button type="button" class="clear-button icon icon-double-left"></li>
+                <li><button type="button" class="clear-button icon icon-left"></button></li>
+                <li><button type="button" class="clear-button active">1</button></li>
+                <li><button type="button" class="clear-button">2</button></li>
+                <li><button type="button" class="clear-button">3</button></li>
+                <li><button type="button" class="clear-button">4</button></li>
+                <li><button type="button" class="clear-button icon icon-right"></button></li>
+                <li><button type="button" class="clear-button icon icon-double-right"></button></li>
+              </ul>
             </div>
           </section>
         </div>

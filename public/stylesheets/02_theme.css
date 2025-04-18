@@ -89,6 +89,8 @@
   --text-color-32: #454C58;
   --text-color-33: #868686;
   --text-color-34: #2F333B;
+  --text-color-35: #6B7280;
+  --text-color-36: #6B7280;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #f4f6f8;
@@ -108,6 +110,8 @@
   --icon-alarm: url("/images/icon-alarm-light.svg");
   --icon-search: url("/images/icon-search-light.svg");
   --icon-check: url("/images/icon-check-light.svg");
+  --icon-pg-double-arrow-left: url("/images/pg-double-arrow-left-light.svg");
+  --icon-pg-arrow-left: url("/images/pg-arrow-left-light.svg");
   --hover-color-01: #0091da;
   --hover-icon-heart: url("/images/icon-heart-dark.svg");
   --hover-icon-alarm: url("/images/icon-alarm-dark.svg");
@@ -170,6 +174,8 @@
   --text-color-32: #D9DDE2;
   --text-color-33: #B0B0B0;
   --text-color-34: #FFF;
+  --text-color-35: #D9DDE2;
+  --text-color-36: #354157;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #313131;
@@ -188,9 +194,11 @@
   --icon-heart: url("/images/icon-heart-dark.svg");
   --icon-alarm: url("/images/icon-alarm-dark.svg");
   --icon-search: url("/images/icon-search-dark.svg");
+  --icon-check: url("/images/icon-check-dark.svg");
+  --icon-pg-double-arrow-left: url("/images/pg-double-arrow-left-dark.svg");
+  --icon-pg-arrow-left: url("/images/pg-arrow-left-dark.svg");
   --hover-icon-heart: url("/images/icon-heart-light.svg");
   --hover-icon-alarm: url("/images/icon-alarm-light.svg");
-  --icon-check: url("/images/icon-check-dark.svg");
   --hover-color-01: #a5ce4f;
   --box-shadow-01: rgba(255, 255, 255, 0.2);
   --box-shadow-02: rgba(255, 255, 255, 0.09);
