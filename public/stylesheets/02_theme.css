@@ -85,6 +85,8 @@
   --text-color-29: #6A707B;
   --text-color-30: #6A707B;
   --text-color-31: #0091DA;
+  --text-color-32: #454C58;
+  --text-color-33: #868686;
   --scrollbar-thumb-color: rgba(0, 0, 0, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #f4f6f8;
@@ -102,9 +104,12 @@
   --icon-heart: url("/images/icon-heart-light.svg");
   --icon-alarm: url("/images/icon-alarm-light.svg");
   --icon-search: url("/images/icon-search-light.svg");
+  --icon-check: url("/images/icon-check-light.svg");
   --hover-color-01: #0091da;
   --hover-icon-heart: url("/images/icon-heart-dark.svg");
   --hover-icon-alarm: url("/images/icon-alarm-dark.svg");
+  --box-shadow-01: rgba(0, 0, 0, 0.2);
+  --box-shadow-02: rgba(0, 0, 0, 0.09);
 }
 
 .dark-theme {
@@ -158,6 +163,8 @@
   --text-color-29: #ececec;
   --text-color-30: #f8f8f8;
   --text-color-31: #FFF;
+  --text-color-32: #D9DDE2;
+  --text-color-33: #B0B0B0;
   --scrollbar-thumb-color: rgba(255, 255, 255, 0.5);
   --scrollbar-thumb-color-02: #ccc;
   --scrollbar-bg-color-02: #313131;
@@ -177,7 +184,10 @@
   --icon-search: url("/images/icon-search-dark.svg");
   --hover-icon-heart: url("/images/icon-heart-light.svg");
   --hover-icon-alarm: url("/images/icon-alarm-light.svg");
+  --icon-check: url("/images/icon-check-dark.svg");
   --hover-color-01: #a5ce4f;
+  --box-shadow-01: rgba(255, 255, 255, 0.2);
+  --box-shadow-02: rgba(255, 255, 255, 0.09);
 }
 
 /* Chrome, Edge, Safari 브라우저 기본*/

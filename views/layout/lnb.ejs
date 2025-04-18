@@ -6,9 +6,8 @@
     <nav class="sidebar" id="sidebar">
       <div class="container">
         <div class="not-logged-in">
-          <h5>로그인 후 이용하실 수 있어요.</h5>
-          <h5>회원이 아니라면 지금 가입하세요!</h5>
-          <p>
+          <h5 class="title">로그인 후 이용하실 수 있어요.<br />회원이 아니라면 지금 가입하세요!</h5>
+          <p class="links">
             <a href='#'>로그인 ></a><a href='#'>회원가입 ></a>
           </p>
         </div>
@@ -17,33 +16,83 @@
           <section class="content" id="lnbSidebarAlaram">
             <div class="top-side">
               <h5 class="title">알림</h5>
-              <p>모두 읽음처리</p>
+              <p class="option">
+                <button type="button" class="clear-button">
+                  <i class='icon icon-check'></i>
+                  <span>모두 읽음처리</span>
+                </button>
+              </p>
             </div>
             <div class="button-lists">
               <ul>
-                <li>전체 4</li>
-                <li>문서접수 2</li>
-                <li>종국결과 2</li>
+                <li><button type="button" class="clear-button blue"><span class="txt">전체</span><span class="count">4</span></button></li>
+                <li><button type="button" class="clear-button gray"><span class="txt">문건접수</span><span class="count">2</span></button></li>
+                <li><button type="button" class="clear-button gray"><span class="txt">종국결과</span><span class="count">2</span></button></li>
+                <li><button type="button" class="clear-button gray"><span class="txt">기일알림</span><span class="count"></span></button></li>
               </ul>
             </div>
             <div class="content-counts">
-              <p><span>4</span>개</p>
+              <p>
+                <span class="count">4</span>
+                <span class="txt">개</span>
+              </p>
             </div>
             <div class="alarm-content-lists-container custom-scroll">
-              <div class="recent-content-lists">
-                <div class="lists">
-                  <div class="item-info">
-                    <div class="bedge blue">문건접수</div>
-                    <p>서울중앙 2024타경000000[1]</p>
+
+              <div class="scroll-wrapper">
+              <% 
+                for (let i = 0; i < 10; i++) {  
+              %>
+                <div class="list type-receipt">
+                  <div class="list-top">
+                    <div class="bedge green">문건접수</div>
+                    <p class="txt">서울중앙 <span class="bold">2024타경000000[1]</span></p>
                   </div>
-                  <div class="item-info">
-                    <p>채권자 농OOOOOOOOOOO 유치권권리배제신청서 제출</p>
+                  <div class="list-middle">
+                    <div class="description">
+                      <span>채권자</span>
+                      <span>농OOOOOOOOOOO</span>
+                      <span>유치권</span>
+                      <span>권리배제신청서 제출</span>
+                    </div>
                   </div>
-                  <div class="item-info">
+                  <div class="item-bottom">
                     <time>2025.05.01</time>
                     <div class="">New</div>
                   </div>
                 </div>
+
+                <div class="list type-result">
+                  <div class="list-top">
+                    <div class="bedge green">종국결과</div>
+                    <p class="txt">서울중앙 <span class="bold">2024타경000000[1]</span></p>
+                  </div>
+                  <div class="list-middle">
+                    <div class="title-data">
+                      <div class="title">확인 매각기일</div>
+                      <div class="data">2025-03-01</div>
+                    </div>
+                    <div class="title-data">
+                      <div class="title">최종 매각기일</div>
+                      <div class="data">2025-03-01</div>
+                    </div>
+                    <div class="title-data">
+                      <div class="title">상태</div>
+                      <div class="data">유찰 → 매각</div>
+                    </div>
+                    <div class="result-txt">
+                      <span>김대규</span>
+                      <span>매각</span>
+                      <span>2,999,000,000원</span>
+                      <span>(70%)</span>
+                    </div>
+                  </div>
+                  <div class="list-bottom">
+                    <time>2025.05.01</time>
+                    <div class="">New</div>
+                  </div>
+                </div>
+                <% } %>
               </div>
               <div>
                 <p>더보기</p>
