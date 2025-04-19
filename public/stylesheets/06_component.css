@@ -385,8 +385,7 @@ button.button.basic-9 {
 }
 
 .select-button span.placeholder {
-  /* color: #9CA3AF; */
-  color: var(--text-color-24);
+  color: #CBCAD7;
 }
 
 .select-dropdown {
