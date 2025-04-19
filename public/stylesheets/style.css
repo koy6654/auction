@@ -1,17 +1,16 @@
 main {
-  display: flex;
   position: relative;
-  padding: 10px;
   padding-right: 66px;
-  margin-top: 112px;
-  min-height: 880px;
-  z-index: var(--z-index-main);
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  flex: 1 0 0;
-  align-self: stretch;
+  padding-top: 112px;
   color: var(--text-color-02);
-  background-color: var(--bg-color-01);
-  /* filter: grayscale(0.5) blur(1px); */
+}
+
+main .main-wrap {
+  position: relative;
+  width: 1084px;
+  min-height: 880px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: var(--z-index-main);
 }
