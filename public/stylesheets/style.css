@@ -2,6 +2,7 @@ main {
   display: flex;
   position: relative;
   padding: 10px;
+  padding-right: 66px;
   margin-top: 112px;
   min-height: 880px;
   z-index: var(--z-index-main);
@@ -13,20 +14,4 @@ main {
   color: var(--text-color-02);
   background-color: var(--bg-color-01);
   /* filter: grayscale(0.5) blur(1px); */
-}
-
-main .main-wrapper {
-  width: 100%;
-  padding-right: 55px;
-}
-
-main .main-title {
-  display: flex;
-  height: 86px;
-  padding: 20px 0px;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
 }
