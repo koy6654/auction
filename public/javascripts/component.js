@@ -17,7 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
       option.addEventListener("click", () => {
         const label = option.textContent.trim();
         const span = button.querySelector("span");
-        if (span) span.textContent = label;
+        if (span) {
+          span.textContent = label;
+          span.classList.remove("placeholder"); // 스타일 전환
+        }
         select.classList.remove("open");
       });
     });

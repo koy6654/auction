@@ -17,161 +17,176 @@
     <% include ../layout/header-normal.ejs %> <% include
     ../layout/header-min.ejs %>
     <main>
-      <!-- Button -->
-      <div>
-        <h2>button</h2>
-        <button type="button" class="button basic-white">basic_white</button>
-        <button type="button" class="button basic-1">basic1</button>
-        <button type="button" class="button basic-2">basic2</button>
-        <button type="button" class="button basic-3">basic3</button>
-        <button type="button" class="button basic-4">basic4</button>
-        <button type="button" class="button basic-5">basic5</button>
-        <button type="button" class="button basic-6">basic6</button>
-        <button type="button" class="button basic-7">basic7</button>
-        <button type="button" class="button basic-8">종합검색</button>
-        <button type="button" class="button basic-9">간편검색</button>
-      </div>
-
-      <div>
-        <h2>tag</h2>
-        <div class="tag-blue">위험물저장 및 처리시설</div>
-        <div class="tag-green">진행중</div>
-        <div class="tag-white">#유찰2회</div>
-      </div>
-
-      <br />
-      <!-- Radio -->
-      <div>
-        <h2>radio</h2>
-        <label class="radio-label">
-          <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-1" checked />
-          <div class="radio-visual">
-            <div class="radio-outer"></div>
-            <div class="radio-inner"></div>
-          </div>
-          <span class="radio-text">라디오-1</span>
-        </label>
-        <label class="radio-label">
-          <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-2" />
-          <div class="radio-visual">
-            <div class="radio-outer"></div>
-            <div class="radio-inner"></div>
-          </div>
-          <span class="radio-text">라디오-2</span>
-        </label>
-        <label class="radio-label">
-          <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-3" />
-          <div class="radio-visual">
-            <div class="radio-outer"></div>
-            <div class="radio-inner"></div>
-          </div>
-          <span class="radio-text">라디오-3</span>
-        </label>
-      </div>
-
-      <br />
-      <!-- Switch -->
-      <div>
-        <div style="display: flex; align-items: center;"><h2>switch</h2>&nbsp;&nbsp;<h4>(unit/toggle)</h4></div>
-        <div class="switch-unit">
-          <input type="radio" name="unit-group-1" id="switch-unit-id-1" checked>
-          <label class="switch-unit-label" for="switch-unit-id-1">㎡</label>
-          <input type="radio" name="unit-group-1" id="unit-id-2">
-          <label class="switch-unit-label" for="unit-id-2">평</label>
-        </div>
-        <div class="switch-toggle">
-          <input class="switch-toggle-input" type="checkbox" id="switch-toggle-id-1">
-          <label class="switch-toggle-label" for="switch-toggle-id-1">
-            <div class="switch-toggle-circle"></div>
-          </label>
-        </div>
-      </div>
-
-      <br />
-      <!-- Input -->
-      <div>
-        <h2>input</h2>
-        <div class="input">
-          <div class="input-label">
-            <div>Input label</div>
-            <div class="input-label-optional">(Optional)</div>
-          </div>
-          <input
-            id="input-id"
-            type="text"
-            class="input-field"
-            placeholder="placehold"
-          />
-          <div class="input-alert">
-            <div>Input label</div>
-            <div>(Optional)</div>
+      <div class="main-wrapper">
+        <div class="main-title">
+          <h2>제목</h2>
+          <div class="sub-title">
+            <h4>서브제목</h4>
+            <div class="breadcrumb">
+              <ul>
+                <div class="'"></div>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="input">
-          <div class="input-label">
-            <div>Input label</div>
-            <div class="input-label-optional">(Optional)</div>
-          </div>
-          <input
-            id="input-id"
-            type="text"
-            class="input-field"
-            placeholder="placehold"
-            disabled
-          />
-          <div class="input-alert">
-            <div>Input label</div>
-            <div>(Optional)</div>
-          </div>
-        </div>
-      </div>
-      
-      <br />
-      <!-- Select -->
-      <div>
-        <h2>select</h2>
-        
-        <div class="select">
-          <button class="select-button" type="button">
-            <span>Select with Javascript</span>
-            <i></i>
-          </button>
-          <div class="select-dropdown">
-            <ul>
-              <li><button type="button">KOR</button></li>
-              <li><button type="button">USA</button></li>
-              <li><button type="button">NER</button></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <div class="main-content">
+           <!-- Button -->
+            <div>
+              <h2>button</h2>
+              <button type="button" class="button basic-white">basic_white</button>
+              <button type="button" class="button basic-1">basic1</button>
+              <button type="button" class="button basic-2">basic2</button>
+              <button type="button" class="button basic-3">basic3</button>
+              <button type="button" class="button basic-4">basic4</button>
+              <button type="button" class="button basic-5">basic5</button>
+              <button type="button" class="button basic-6">basic6</button>
+              <button type="button" class="button basic-7">basic7</button>
+              <button type="button" class="button basic-8">종합검색</button>
+              <button type="button" class="button basic-9">간편검색</button>
+            </div>
 
-      <br />
-      <!-- CheckBox -->
-      <div>
-        <h2>check box</h2>
-        <label class="checkbox">
-          <input type="checkbox" />
-          <span class="checkbox-box"></span>
-          <span class="checkbox-label">유치권</span>
-        </label>
-      </div>
+            <div>
+              <h2>tag</h2>
+              <div class="tag-blue">위험물저장 및 처리시설</div>
+              <div class="tag-green">진행중</div>
+              <div class="tag-white">#유찰2회</div>
+            </div>
+
+            <br />
+            <!-- Radio -->
+            <div>
+              <h2>radio</h2>
+              <label class="radio-label">
+                <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-1" checked />
+                <div class="radio-visual">
+                  <div class="radio-outer"></div>
+                  <div class="radio-inner"></div>
+                </div>
+                <span class="radio-text">라디오-1</span>
+              </label>
+              <label class="radio-label">
+                <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-2" />
+                <div class="radio-visual">
+                  <div class="radio-outer"></div>
+                  <div class="radio-inner"></div>
+                </div>
+                <span class="radio-text">라디오-2</span>
+              </label>
+              <label class="radio-label">
+                <input class="radio-input" type="radio" name="radio-group-1" value="radio-value-3" />
+                <div class="radio-visual">
+                  <div class="radio-outer"></div>
+                  <div class="radio-inner"></div>
+                </div>
+                <span class="radio-text">라디오-3</span>
+              </label>
+            </div>
+
+            <br />
+            <!-- Switch -->
+            <div>
+              <div style="display: flex; align-items: center;"><h2>switch</h2>&nbsp;&nbsp;<h4>(unit/toggle)</h4></div>
+              <div class="switch-unit">
+                <input type="radio" name="unit-group-1" id="switch-unit-id-1" checked>
+                <label class="switch-unit-label" for="switch-unit-id-1">㎡</label>
+                <input type="radio" name="unit-group-1" id="unit-id-2">
+                <label class="switch-unit-label" for="unit-id-2">평</label>
+              </div>
+              <div class="switch-toggle">
+                <input class="switch-toggle-input" type="checkbox" id="switch-toggle-id-1">
+                <label class="switch-toggle-label" for="switch-toggle-id-1">
+                  <div class="switch-toggle-circle"></div>
+                </label>
+              </div>
+            </div>
+
+            <br />
+            <!-- Input -->
+            <div>
+              <h2>input</h2>
+              <div class="input">
+                <div class="input-label">
+                  <div>Input label</div>
+                  <div class="input-label-optional">(Optional)</div>
+                </div>
+                <input
+                  id="input-id"
+                  type="text"
+                  class="input-field"
+                  placeholder="placehold"
+                />
+                <div class="input-alert">
+                  <div>Input label</div>
+                  <div>(Optional)</div>
+                </div>
+              </div>
+              <div class="input">
+                <div class="input-label">
+                  <div>Input label</div>
+                  <div class="input-label-optional">(Optional)</div>
+                </div>
+                <input
+                  id="input-id"
+                  type="text"
+                  class="input-field"
+                  placeholder="placehold"
+                  disabled
+                />
+                <div class="input-alert">
+                  <div>Input label</div>
+                  <div>(Optional)</div>
+                </div>
+              </div>
+            </div>
+            
+            <br />
+            <!-- Select -->
+            <div>
+              <h2>select</h2>
+              
+              <div class="select">
+                <button class="select-button" type="button">
+                  <span class="placeholder">Select with Javascript</span>
+                  <i></i>
+                </button>
+                <div class="select-dropdown">
+                  <ul>
+                    <li><button type="button">KOR</button></li>
+                    <li><button type="button">USA</button></li>
+                    <li><button type="button">NER</button></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <br />
+            <!-- CheckBox -->
+            <div>
+              <h2>check box</h2>
+              <label class="checkbox">
+                <input type="checkbox" />
+                <span class="checkbox-box"></span>
+                <span class="checkbox-label">유치권</span>
+              </label>
+            </div>
 
 
-      <br />
-      <!-- Table -->
-      <div>
-        <table class="table">
-          <tr>
-            <th>매각기일</th>
-            <td>매각기일은 매각기일이고</td>
-          </tr>
-          <tr>
-            <th>소재지</th>
-            <td>소재지는 소재지이다</td>
-          </tr>
-        </table>
-      </div>
+            <br />
+            <!-- Table -->
+            <div>
+              <table class="table">
+                <tr>
+                  <th>매각기일</th>
+                  <td>매각기일은 매각기일이고</td>
+                </tr>
+                <tr>
+                  <th>소재지</th>
+                  <td>소재지는 소재지이다</td>
+                </tr>
+              </table>
+            </div>
+        </div> <!-- /main-content -->
+      </div> <!-- /main-wrapper -->
     </main>
     <% include ../layout/lnb.ejs %> <% include ../layout/footer.ejs %>
     <script src="/javascripts/header.js"></script>

@@ -122,6 +122,7 @@
   --component-input-color-01: #686677;
   --component-input-color-02: #DC3545;
   --component-table-bg-color-01: #F2F2F2;
+  --component-input-disable-color-01: rgba(17, 17, 17, 0.05);
 }
 
 .dark-theme {
@@ -212,6 +213,7 @@
   --component-input-color-01: #FFFFFF;
   --component-input-color-02: #FFFFFF;
   --component-table-bg-color-01: #37373F;
+  --component-input-disable-color-01: rgba(255, 255, 255, 0.05);
 }
 
 /* Chrome, Edge, Safari 브라우저 기본*/
