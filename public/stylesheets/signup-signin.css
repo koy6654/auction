@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .signup-signin .login-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color-12);
+  z-index: -1;
+}
+
+main .signup-signin .login-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

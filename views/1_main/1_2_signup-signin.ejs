@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/stylesheets/01_reset.css" />
     <link rel="stylesheet" href="/stylesheets/02_theme.css" />
+    <link rel="stylesheet" href="/stylesheets/04_lnb.css" />
     <link rel="stylesheet" href="/stylesheets/signup-signin.css" />
-    <title><%= title %></title>
+    <title><%= title %> / <%= subtitle %></title>
   </head>
   <body>
     <main>
-      로그인
+      <div class="signup-signin">
+        <div class="login-backdrop"></div>
+        <div class="login-form">
+          로그인
+        </div>
+      </div>
     </main>
+    <% include ../layout/lnb.ejs %>
+    <script src="/javascripts/lnb.js"></script>
   </body>
 </html>

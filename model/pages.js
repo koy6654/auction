@@ -20,8 +20,8 @@ export const main = [
     route: "1_main",
     path: "1_2_signup-signin",
     title: "로그인/회원가입",
-    subtitle: "",
-    description: "로그인/회원가입 페이지입니다.",
+    subtitle: "로그인",
+    description: "로그인 페이지",
   },
   {
     route: "1_main",
