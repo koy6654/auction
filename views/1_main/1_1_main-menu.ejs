@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/stylesheets/03_header.css" />
     <link rel="stylesheet" href="/stylesheets/04_lnb.css" />
     <link rel="stylesheet" href="/stylesheets/05_footer.css" />
+    <link rel="stylesheet" href="/stylesheets/06_component.css" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
     <title><%= title %></title>
   </head>
@@ -16,13 +17,21 @@
     <% include ../layout/header-normal.ejs %> <% include
     ../layout/header-min.ejs %>
     <main>
-      <% for (let i = 0; i < 10; i++) { %>
-      <p><%= title %> - <%= i + 1 %></p>
-      <p><%= path %> - <%= i + 1 %></p>
-      <% } %>
+      <div class="page-header">
+        <div class="page-header-title">제목</div>
+        <div class="page-header-metadata">
+          <div class="page-header-subtitle">서브제목</div>
+          <div class="page-header-breadcrumb">
+            <div class="page-header-icon" data-size="24x24"></div>
+            <div class="page-header-divider">/</div>
+            <div class="page-header-link">Home</div>
+          </div>
+        </div>
+      </div>
     </main>
     <% include ../layout/lnb.ejs %> <% include ../layout/footer.ejs %>
     <script src="/javascripts/header.js"></script>
     <script src="/javascripts/lnb.js"></script>
+    <script src="/javascripts/component.js"></script>
   </body>
 </html>

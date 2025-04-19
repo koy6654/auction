@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/01_reset.css" />
+    <link rel="stylesheet" href="/stylesheets/02_theme.css" />
+    <link rel="stylesheet" href="/stylesheets/03_header.css" />
+    <link rel="stylesheet" href="/stylesheets/04_lnb.css" />
+    <link rel="stylesheet" href="/stylesheets/05_footer.css" />
+    <link rel="stylesheet" href="/stylesheets/06_component.css" />
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title><%= title %></title>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p><%= path %></p>
+    <% include ../layout/header-normal.ejs %> <% include
+    ../layout/header-min.ejs %>
+    <main>
+      <div class="page-header">
+        <div class="page-header-title">공지사항</div>
+        <div class="page-header-metadata">
+          <div class="page-header-subtitle">서비스 변경, 점검, 업데이트 소식 안내</div>
+          <div class="page-header-breadcrumb">
+            <div class="page-header-icon" data-size="24x24"></div>
+            <div class="page-header-divider">/</div>
+            <div class="page-header-link">고객지원</div>
+            <div class="page-header-divider">/</div>
+            <div class="page-header-link">공지사항</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <% include ../layout/lnb.ejs %> <% include ../layout/footer.ejs %>
+    <script src="/javascripts/header.js"></script>
+    <script src="/javascripts/lnb.js"></script>
+    <script src="/javascripts/component.js"></script>
   </body>
 </html>
