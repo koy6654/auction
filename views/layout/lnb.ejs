@@ -13,7 +13,8 @@
         </div>
         <div class="logged-in">
           
-          <section class="content" id="lnbSidebarAlaram">
+          <!-- 알림 -->
+          <section class="content alarm" id="lnbSidebarAlaram">
             <div class="top-side">
               <h5 class="title">알림</h5>
               <p class="option">
@@ -99,7 +100,8 @@
             </div> <!-- / scroll end -->
           </section>
           
-          <section class="content" id="lnbSidebarFavorite">
+          <!-- 관심 -->
+          <section class="content favorite" id="lnbSidebarFavorite">
             <div class="top-side">
               <h5 class="title">관심물건</h5>
               <p class="option">
@@ -114,276 +116,279 @@
               </ul>
             </div>
 
-            <div class="group-select-container">
-              <label>그룹</label>
-              <div class="group-select-prepare">
-                <div class="left">
-                  <div class="button-lists">
-                    <ul>
-                      <li>
-                        <button type="button" class="clear-button gray-angle-down">
-                          <span>그룹전체</span>
-                          <i class="icon icon-angle-down-wide"></i>
-                        </button>
-                      </li>
-                      <li>
-                        <button type="button" class="clear-button gray-circle">
-                          <i class="icon icon-lnb-plus"></i>
-                        </button>
-                      </li>
-                    </ul>
+            <div class="custom-scroll">
+              <div class="group-select-container">
+                <label>그룹</label>
+                <div class="group-select-prepare">
+                  <div class="left">
+                    <div class="button-lists">
+                      <ul>
+                        <li>
+                          <button type="button" class="clear-button gray-angle-down">
+                            <span>그룹전체</span>
+                            <i class="icon icon-angle-down-wide"></i>
+                          </button>
+                        </li>
+                        <li>
+                          <button type="button" class="clear-button gray-circle">
+                            <i class="icon icon-lnb-plus"></i>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <button type="button" class="clear-button">편집</button>
                   </div>
                 </div>
+              </div>
+
+              <div class="button-lists">
+                <ul>
+                  <li>
+                    <button type="button" class="clear-button gray-angle-down">
+                      <span>매각기일</span>
+                      <i class="icon icon-angle-down-wide"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="clear-button gray-angle-down">
+                      <span>소재지</span>
+                      <i class="icon icon-angle-down-wide"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="clear-button gray-angle-down">
+                      <span>용도</span>
+                      <i class="icon icon-angle-down-wide"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="clear-button gray-angle-down">
+                      <span>중요도</span>
+                      <i class="icon icon-angle-down-wide"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="clear-button gray-angle-down">
+                      <span>메모</span>
+                      <i class="icon icon-angle-down-wide"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="clear-button reset">
+                      <span>초기화</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div class="button-lists">
+                <label>상태</label>
+                <ul>
+                  <li><button type="button" class="clear-button blue"><span class="txt">전체</span><span class="count">2</span></button></li>
+                  <li><button type="button" class="clear-button gray"><span class="txt">진행</span><span class="count">1</span></button></li>
+                  <li><button type="button" class="clear-button gray"><span class="txt">예정</span><span class="count">1</span></button></li>
+                  <li><button type="button" class="clear-button gray"><span class="txt">매각</span><span class="count"></span></button></li>
+                  <li><button type="button" class="clear-button gray"><span class="txt">변경</span><span class="count"></span></button></li>
+                  <li><button type="button" class="clear-button gray"><span class="txt">기타</span><span class="count"></span></button></li>
+                </ul>
+              </div>
+
+              <div class="button-lists">
+                <label>용도</label>
+                <ul>
+                  <li><button type="button" class="clear-button blue"><span class="txt">전체</span><span class="count">2</span></button></li>
+                  <li><button type="button" class="clear-button gray"><span class="txt">아파트</span><span class="count">1</span></button></li>
+                  <li><button type="button" class="clear-button gray"><span class="txt">상가</span><span class="count">1</span></button></li>
+                </ul>
+              </div>
+
+              <div class="content-counts">
+                <p class="left">
+                  <span class="count">2</span>
+                  <span class="txt">개</span>
+                </p>
                 <div class="right">
-                  <button type="button" class="clear-button">편집</button>
+                  <button type="button" class="clear-button">
+                    <span>매각기일 높은</span>
+                    <i class="icon icon-angle-down-wide"></i>
+                  </button>
+                  <button type="button" class="clear-button">
+                    <span>매각기일 낮은</span>
+                    <i class="icon icon-angle-down-wide flip"></i>
+                  </button>
                 </div>
               </div>
-            </div>
 
-            <div class="button-lists">
-              <ul>
-                <li>
-                  <button type="button" class="clear-button gray-angle-down">
-                    <span>매각기일</span>
-                    <i class="icon icon-angle-down-wide"></i>
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="clear-button gray-angle-down">
-                    <span>소재지</span>
-                    <i class="icon icon-angle-down-wide"></i>
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="clear-button gray-angle-down">
-                    <span>용도</span>
-                    <i class="icon icon-angle-down-wide"></i>
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="clear-button gray-angle-down">
-                    <span>중요도</span>
-                    <i class="icon icon-angle-down-wide"></i>
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="clear-button gray-angle-down">
-                    <span>메모</span>
-                    <i class="icon icon-angle-down-wide"></i>
-                  </button>
-                </li>
-                <li>
-                  <button type="button" class="clear-button reset">
-                    <span>초기화</span>
-                  </button>
-                </li>
-              </ul>
-            </div>
-
-
-            <div class="button-lists">
-              <label>상태</label>
-              <ul>
-                <li><button type="button" class="clear-button blue"><span class="txt">전체</span><span class="count">2</span></button></li>
-                <li><button type="button" class="clear-button gray"><span class="txt">진행</span><span class="count">1</span></button></li>
-                <li><button type="button" class="clear-button gray"><span class="txt">예정</span><span class="count">1</span></button></li>
-                <li><button type="button" class="clear-button gray"><span class="txt">매각</span><span class="count"></span></button></li>
-                <li><button type="button" class="clear-button gray"><span class="txt">변경</span><span class="count"></span></button></li>
-                <li><button type="button" class="clear-button gray"><span class="txt">기타</span><span class="count"></span></button></li>
-              </ul>
-            </div>
-
-            <div class="button-lists">
-              <label>용도</label>
-              <ul>
-                <li><button type="button" class="clear-button blue"><span class="txt">전체</span><span class="count">2</span></button></li>
-                <li><button type="button" class="clear-button gray"><span class="txt">아파트</span><span class="count">1</span></button></li>
-                <li><button type="button" class="clear-button gray"><span class="txt">상가</span><span class="count">1</span></button></li>
-              </ul>
-            </div>
-
-            <div class="content-counts">
-              <p class="left">
-                <span class="count">2</span>
-                <span class="txt">개</span>
-              </p>
-              <div class="right">
-                <button type="button" class="clear-button">
-                  <span>매각기일 높은</span>
-                  <i class="icon icon-angle-down-wide"></i>
-                </button>
-                <button type="button" class="clear-button">
-                  <span>매각기일 낮은</span>
-                  <i class="icon icon-angle-down-wide flip"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="recent-content-lists-container custom-scroll">
-              <% 
-                for (let i = 0; i < 2; i++) {  
-              %>
-              <div class="recent-content-lists">
-                <div class="lists">
-                  <div class="left">
-                    <div class="item-info">
-                      <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
-                      <!-- <div class="bedges">
-                        <div class="bedge blue">위험물저장 및 처리시설</div>
-                        <div class="bedge green">진행중</div>
-                      </div> -->
-                    </div>
-                    <div class="address">
-                      <span>경기도 양평군 지평면 절운1길 10-23</span>
-                    </div>
-                    <div class="rows">
-                      <div class="row">
-                        <div class="label">감정가</div>
-                        <div class="value top">
-                          <span>372,232,000</span> 원
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="label">최저매각가</div>
-                        <div class="value middle">
-                          <span>(51%)</span>
-                          <span>182,393,000</span> 원
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="label">매각기일</div>
-                        <div class="value bottom">
-                          <time class="date">2025.05.01</time>
-                          <span class="d-day">D-17</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="right">
-                    <div class="mask">
-                      <img src="/images/search-popup-building-img.png" width="112" height="111" />
-                    </div>
-                  </div>
-                </div>
-                <div class="bottom">
-                  <div class="twin">
+              <div class="recent-content-lists-container">
+                <% 
+                  for (let i = 0; i < 2; i++) {  
+                %>
+                <div class="recent-content-lists">
+                  <div class="lists">
                     <div class="left">
-                      <div class="bedges">
-                        <div class="bedge blue">다세대</div>
-                        <div class="bedge green">진행중</div>
-                        <div class="bedge">#유찰2회</div>
-                        <div class="bedge">#농지취즉자격증명</div>
+                      <div class="item-info">
+                        <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
+                        <!-- <div class="bedges">
+                          <div class="bedge blue">위험물저장 및 처리시설</div>
+                          <div class="bedge green">진행중</div>
+                        </div> -->
+                      </div>
+                      <div class="address">
+                        <span>경기도 양평군 지평면 절운1길 10-23</span>
+                      </div>
+                      <div class="rows">
+                        <div class="row">
+                          <div class="label">감정가</div>
+                          <div class="value top">
+                            <span>372,232,000</span> 원
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="label">최저매각가</div>
+                          <div class="value middle">
+                            <span>(51%)</span>
+                            <span>182,393,000</span> 원
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="label">매각기일</div>
+                          <div class="value bottom">
+                            <time class="date">2025.05.01</time>
+                            <span class="d-day">D-17</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="right">
-                      <button type="button" class="clear-button icon icon-heart"></button>
-                      <button type="button" class="clear-button icon icon-alarm"></button>
-                      <!-- <button type="button" class="clear-button icon icon-heart active"></button>
-                      <button type="button" class="clear-button icon icon-alarm active"></button> -->
+                      <div class="mask">
+                        <img src="/images/search-popup-building-img.png" width="112" height="111" />
+                      </div>
                     </div>
                   </div>
-                  <div class="rating-memo">
-                    <div class="rating">
-                      <i class="icon icon-star-fill"></i>
-                      <i class="icon icon-star-fill"></i>
-                      <i class="icon icon-star-fill"></i>
-                      <i class="icon icon-star"></i>
-                      <i class="icon icon-star"></i>
+                  <div class="bottom">
+                    <div class="twin">
+                      <div class="left">
+                        <div class="bedges">
+                          <div class="bedge blue">다세대</div>
+                          <div class="bedge green">진행중</div>
+                          <div class="bedge">#유찰2회</div>
+                          <div class="bedge">#농지취즉자격증명</div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <button type="button" class="clear-button icon icon-heart"></button>
+                        <button type="button" class="clear-button icon icon-alarm"></button>
+                        <!-- <button type="button" class="clear-button icon icon-heart active"></button>
+                        <button type="button" class="clear-button icon icon-alarm active"></button> -->
+                      </div>
                     </div>
-                    <p class="memo">관심물건 메모...</p>
+                    <div class="rating-memo">
+                      <div class="rating">
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                      </div>
+                      <p class="memo">관심물건 메모...</p>
+                    </div>
                   </div>
-                </div>
-              </div> <!-- / recent-content-lists-->
+                </div> <!-- / recent-content-lists-->
 
-              <div class="recent-content-lists">
-                <div class="lists">
-                  <div class="left">
-                    <div class="item-info">
-                      <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
-                      <!-- <div class="bedges">
-                        <div class="bedge blue">위험물저장 및 처리시설</div>
-                        <div class="bedge green">진행중</div>
-                      </div> -->
-                    </div>
-                    <div class="address">
-                      <span>경기도 양평군 지평면 절운1길 10-23</span>
-                    </div>
-                    <div class="rows">
-                      <div class="row">
-                        <div class="label">감정가</div>
-                        <div class="value top">
-                          <span>372,232,000</span> 원
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="label">최저매각가</div>
-                        <div class="value middle">
-                          <span>(51%)</span>
-                          <span>182,393,000</span> 원
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="label">매각기일</div>
-                        <div class="value bottom">
-                          <time class="date">2025.05.01</time>
-                          <span class="d-day">D-17</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="right">
-                    <div class="mask">
-                      <img src="/images/search-popup-building-img.png" width="112" height="111" />
-                    </div>
-                  </div>
-                </div>
-                <div class="bottom">
-                  <div class="twin">
+                <div class="recent-content-lists">
+                  <div class="lists">
                     <div class="left">
-                      <div class="bedges">
-                        <div class="bedge blue">다세대</div>
-                        <div class="bedge green">진행중</div>
-                        <div class="bedge">#유찰2회</div>
-                        <div class="bedge">#농지취즉자격증명</div>
-                        <div class="bedge">#etc...</div>
-                        <div class="bedge">#etc...</div>
-                        <div class="bedge">#etc...</div>
+                      <div class="item-info">
+                        <span class="sequence">서울중앙 <span class="bold">2024타경000000[1]</span></span>
+                        <!-- <div class="bedges">
+                          <div class="bedge blue">위험물저장 및 처리시설</div>
+                          <div class="bedge green">진행중</div>
+                        </div> -->
+                      </div>
+                      <div class="address">
+                        <span>경기도 양평군 지평면 절운1길 10-23</span>
+                      </div>
+                      <div class="rows">
+                        <div class="row">
+                          <div class="label">감정가</div>
+                          <div class="value top">
+                            <span>372,232,000</span> 원
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="label">최저매각가</div>
+                          <div class="value middle">
+                            <span>(51%)</span>
+                            <span>182,393,000</span> 원
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="label">매각기일</div>
+                          <div class="value bottom">
+                            <time class="date">2025.05.01</time>
+                            <span class="d-day">D-17</span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div class="right">
-                      <button type="button" class="clear-button icon icon-heart active"></button>
-                      <button type="button" class="clear-button icon icon-alarm active"></button>
+                      <div class="mask">
+                        <img src="/images/search-popup-building-img.png" width="112" height="111" />
+                      </div>
                     </div>
                   </div>
-                  <div class="rating-memo">
-                    <div class="rating">
-                      <i class="icon icon-star-fill"></i>
-                      <i class="icon icon-star"></i>
-                      <i class="icon icon-star"></i>
-                      <i class="icon icon-star"></i>
-                      <i class="icon icon-star"></i>
+                  <div class="bottom">
+                    <div class="twin">
+                      <div class="left">
+                        <div class="bedges">
+                          <div class="bedge blue">다세대</div>
+                          <div class="bedge green">진행중</div>
+                          <div class="bedge">#유찰2회</div>
+                          <div class="bedge">#농지취즉자격증명</div>
+                          <div class="bedge">#etc...</div>
+                          <div class="bedge">#etc...</div>
+                          <div class="bedge">#etc...</div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <button type="button" class="clear-button icon icon-heart active"></button>
+                        <button type="button" class="clear-button icon icon-alarm active"></button>
+                      </div>
                     </div>
-                    <p class="memo">관심물건 메모...</p>
+                    <div class="rating-memo">
+                      <div class="rating">
+                        <i class="icon icon-star-fill"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                        <i class="icon icon-star"></i>
+                      </div>
+                      <p class="memo">관심물건 메모...</p>
+                    </div>
                   </div>
-                </div>
-              </div> <!-- / recent-content-lists-->
-              <% } %>
-            </div>
-            <div class="pagenation">
-              <ul>
-                <li><button type="button" class="clear-button icon icon-double-left"></li>
-                <li><button type="button" class="clear-button icon icon-left"></button></li>
-                <li><button type="button" class="clear-button active">1</button></li>
-                <li><button type="button" class="clear-button">2</button></li>
-                <li><button type="button" class="clear-button">3</button></li>
-                <li><button type="button" class="clear-button">4</button></li>
-                <li><button type="button" class="clear-button icon icon-right"></button></li>
-                <li><button type="button" class="clear-button icon icon-double-right"></button></li>
-              </ul>
+                </div> <!-- / recent-content-lists-->
+                <% } %>
+              </div>
+              <div class="pagenation">
+                <ul>
+                  <li><button type="button" class="clear-button icon icon-double-left"></li>
+                  <li><button type="button" class="clear-button icon icon-left"></button></li>
+                  <li><button type="button" class="clear-button active">1</button></li>
+                  <li><button type="button" class="clear-button">2</button></li>
+                  <li><button type="button" class="clear-button">3</button></li>
+                  <li><button type="button" class="clear-button">4</button></li>
+                  <li><button type="button" class="clear-button icon icon-right"></button></li>
+                  <li><button type="button" class="clear-button icon icon-double-right"></button></li>
+                </ul>
+              </div>
             </div>
           </section>
           
-          <section class="content" id="lnbSidebarRecent">
+          <!-- 최근 본 -->
+          <section class="content recent" id="lnbSidebarRecent">
             <div class="top-side">
               <h5 class="title">최근 본 물건</h5>
               <p class="option">

@@ -76,10 +76,11 @@ nav.nav-right-side .under-prepare .sidebar .container {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  padding: 20px 18px;
+  padding: 20px 0px;
 }
 
 nav.nav-right-side .under-prepare .sidebar .container .not-logged-in {
+  margin: 0 18px 21px 18px;
   display: flex;
   padding: 18px;
   flex-direction: column;
@@ -89,7 +90,6 @@ nav.nav-right-side .under-prepare .sidebar .container .not-logged-in {
   border-radius: 12px;
   background: var(--bg-color-01);
   box-shadow: 0px 0px 14px 0px var(--box-shadow-02);
-  margin-bottom: 21px;
 }
 
 nav.nav-right-side .under-prepare .sidebar .container .not-logged-in .title {
@@ -126,6 +126,21 @@ nav.nav-right-side .under-prepare .sidebar .container .logged-in .content {
   flex-direction: column;
   overflow: hidden;
   gap: 21px;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content.alarm,
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content.recent {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content.favorite {
+  padding-left: 17px;
+  padding-right: 10px;
+}
+
+nav.nav-right-side .under-prepare .sidebar .container .logged-in .content.favorite .custom-scroll {
+  padding-right: 7px;
 }
 
 
