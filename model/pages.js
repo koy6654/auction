@@ -110,10 +110,8 @@ export const details = [
   { route: "9_details", path: "9_2_email-form", title: "이메일 폼" },
 ];
 
-export const test = [{ route: "test", path: "test", title: "테스트페이지" }];
 
 export const pages = [
-  ...test,
   ...template,
   ...main,
   ...auction,

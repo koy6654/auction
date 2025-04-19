@@ -118,6 +118,10 @@
   --hover-icon-alarm: url("/images/icon-alarm-dark.svg");
   --box-shadow-01: rgba(0, 0, 0, 0.2);
   --box-shadow-02: rgba(0, 0, 0, 0.09);
+  --component-color-01: #000000;
+  --component-input-color-01: #686677;
+  --component-input-color-02: #DC3545;
+  --component-table-bg-color-01: #F2F2F2;
 }
 
 .dark-theme {
@@ -204,6 +208,10 @@
   --hover-color-01: #a5ce4f;
   --box-shadow-01: rgba(255, 255, 255, 0.2);
   --box-shadow-02: rgba(255, 255, 255, 0.09);
+  --component-color-01: #FFFFFF;
+  --component-input-color-01: #FFFFFF;
+  --component-input-color-02: #FFFFFF;
+  --component-table-bg-color-01: #37373F;
 }
 
 /* Chrome, Edge, Safari 브라우저 기본*/

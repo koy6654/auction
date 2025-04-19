@@ -1,26 +1,3 @@
-.component-button {
-  padding: 10px;
-  border-radius: 8px;
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
-  width: var(--width);
-  height: var(--height);
-  background: var(--background);
-  outline: var(--outline);
-  outline-offset: var(--outline-offset);
-}
-
-.component-button-label {
-  text-align: center;
-  font-family: Pretendard;
-  font-weight: 600;
-  line-height: 16px;
-  word-wrap: break-word;
-  color: var(--color);
-  font-size: var(--font-size);
-}
-
 button.button {
   cursor: pointer;
   padding: 10px;
@@ -297,7 +274,7 @@ button.button.basic-9 {
 
 .input {
   width: 200px;
-  background: white;
+  background: var(--bg-color-01);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -305,27 +282,28 @@ button.button.basic-9 {
 }
 
 .input-label {
+  color: var(--component-input-color-01);
   display: flex;
   align-items: center;
   gap: 4px;
   font-size: 13px;
   line-height: 24px;
-  color: var(--G500, #686677);
   padding-bottom: 5px;
 }
 
 .input-label-optional {
+  color: #9794AA;
   font-size: 12px;
-  color: var(--G400, #9794AA);
   line-height: 20px;
 }
 
 .input-field {
+  background: var(--bg-color-01);
   width: 100%;
   height: 38px;
   padding: 7px 5px 7px 13px;
   border-radius: 4px;
-  border: 1px solid var(--G300, #CBCAD7);
+  border: 1px solid #CAC9D6;
   font-size: 14px;
   color: #333;
   line-height: 24px;
@@ -335,7 +313,7 @@ button.button.basic-9 {
 }
 
 .input-field::placeholder {
-  color: var(--G300, #CBCAD7);
+  color: #CBCAD7;
 }
 
 .input-field:focus {
@@ -344,22 +322,22 @@ button.button.basic-9 {
 
 .input-field:disabled {
   background-color: #1111110D;
-  border-color: 1px var(--G300, #CBCAD7);
+  border-color: 1px #CBCAD7;
   color: #C4C4C4;
   cursor: not-allowed;
 }
 .input-field:disabled::placeholder {
-  color: var(--G300, #CBCAD7);;
+  color: var(--G300, #CBCAD7);
 }
 
 .input-alert {
+  color: var(--component-input-color-02);
   display: flex;
   align-items: center;
   gap: 4px;
   padding-top: 6px;
   font-size: 11px;
   font-weight: 400;
-  color: #DC3545;
   line-height: 24px;
 }
 
@@ -371,9 +349,9 @@ button.button.basic-9 {
 }
 
 .select-button {
+  background: var(--bg-color-01);
   width: 100%;
   padding: 10.5px;
-  background: white;
   border: 1px solid #D1D5DB;
   border-radius: 6px;
   display: flex;
@@ -406,13 +384,13 @@ button.button.basic-9 {
 }
 
 .select-dropdown {
+  background: var(--bg-color-01);
   display: none;
   position: absolute;
   margin-top: 10px;
   top: calc(100% + 4px);
   left: 0;
   right: 0;
-  background: white;
   border: 1px solid #D1D5DB;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -450,7 +428,7 @@ button.button.basic-9 {
   font-size: 15.5px;
   font-weight: 600;
   line-height: 18px;
-  color: black;
+  color: var(--component-color-01);
   cursor: pointer;
   width: fit-content;
 }
@@ -503,7 +481,8 @@ button.button.basic-9 {
   border: 1px solid #E2E2E2;
   padding: 8px;
   text-align: center;
-  color: #090909;
+  color: var(--component-color-01);
+  /* color: #000000; */
   font-size: 15px;
   font-family: Pretendard;
   font-weight: 600;
@@ -517,10 +496,10 @@ button.button.basic-9 {
 }
 
 .table th {
-  background-color: #F2F2F2;
+  background-color: var(--component-table-bg-color-01);
   text-align: left;
 }
 
 .table td {
-  background-color: #FFFFFF;
+  background: var(--bg-color-01);
 }

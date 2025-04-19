@@ -11,7 +11,6 @@ import cookieParser from "cookie-parser";
 import logger from "morgan";
 
 import indexRouter from "./routes/index.js";
-import testRouter from "./routes/test.js";
 import templateRouter from "./routes/0_template.js";
 import mainRouter from "./routes/1_main.js";
 import auctionRouter from "./routes/2_auction.js";
@@ -36,7 +35,6 @@ app.use(cookieParser());
 app.use(express_static(join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/test", testRouter);
 app.use("/0_template", templateRouter);
 app.use("/1_main", mainRouter);
 app.use("/2_auction", auctionRouter);
