@@ -3,6 +3,47 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+    
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+    
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+    
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+    
+      th {
+        background-color: #e0e0e0; /* 더 진한 회색 톤으로 가독성 향상 */
+        color: #333;
+      }
+    
+      /* 홀수 줄 */
+      tr:nth-child(odd) td {
+        background-color: #ffffff;
+      }
+    
+      /* 짝수 줄 */
+      tr:nth-child(even) td {
+        background-color: #f9f9f9;
+      }
+    </style>
+    
   </head>
   <body>
     <h1><%= title %></h1>
@@ -13,6 +54,8 @@
           <tr>
             <th>page no.</th>
             <th>page title</th>
+            <th>page subtitle</th>
+            <th>page description</th>
             <th>page progress</th>
             <th>page link</th>
           </tr>
@@ -22,6 +65,8 @@
           <tr>
             <td><%= index + 1 %></td>
             <td><%= page.title %></td>
+            <td><%= page.subtitle %></td>
+            <td><%= page.description %></td>
             <td>-</td>
             <td>
               <a href="/<%= page.route %>/<%= page.path %>"
